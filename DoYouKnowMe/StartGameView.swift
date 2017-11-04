@@ -11,7 +11,7 @@ import UIKit
 class StartGame: UIViewController {
     
     @IBAction func selectQuestions(_ sender: UIButton) {
-        let viewController: UIViewController = SelectQuestionsView() as UIViewController
+        let viewController: UIViewController = TableViewController() as UIViewController
         self.present(viewController,animated:true, completion: nil)
     }
     

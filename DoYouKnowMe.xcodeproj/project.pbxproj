@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D3239FD01FAB1E380041A1A0 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3239FCE1FAB1E380041A1A0 /* CustomTableViewCell.swift */; };
-		D3239FD11FAB1E380041A1A0 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3239FCF1FAB1E380041A1A0 /* CustomTableViewCell.xib */; };
+		D327DFA01FADFC0000AFB2AE /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D327DF9E1FADFC0000AFB2AE /* TableViewController.swift */; };
+		D327DFA11FADFC0000AFB2AE /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D327DF9F1FADFC0000AFB2AE /* TableViewController.xib */; };
+		D327DFA61FAE04B700AFB2AE /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D327DFA41FAE04B700AFB2AE /* CustomTableViewCell.swift */; };
+		D327DFA71FAE04B700AFB2AE /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D327DFA51FAE04B700AFB2AE /* CustomTableViewCell.xib */; };
 		D36C648A1F8A1CC1008A548F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36C64891F8A1CC1008A548F /* AppDelegate.swift */; };
 		D36C648C1F8A1CC1008A548F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36C648B1F8A1CC1008A548F /* ViewController.swift */; };
 		D36C64911F8A1CC1008A548F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D36C64901F8A1CC1008A548F /* Assets.xcassets */; };
@@ -16,9 +18,6 @@
 		D36C649F1F8A1CC1008A548F /* DoYouKnowMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36C649E1F8A1CC1008A548F /* DoYouKnowMeTests.swift */; };
 		D39130911F8F5DAC00EF2DFD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D391308F1F8F5DAC00EF2DFD /* LoginView.swift */; };
 		D39130921F8F5DAC00EF2DFD /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D39130901F8F5DAC00EF2DFD /* LoginView.xib */; };
-		D3E8F8361FA200A000B299A1 /* SelectQuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E8F8341FA200A000B299A1 /* SelectQuestionsView.swift */; };
-		D3E8F8371FA200A000B299A1 /* SelectQuestionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3E8F8351FA200A000B299A1 /* SelectQuestionsView.xib */; };
-		D3EE86F81FA87C96009D968F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE86F71FA87C96009D968F /* TableViewController.swift */; };
 		D3F1BF5D1F97424200E7D356 /* StartGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F1BF5B1F97424200E7D356 /* StartGameView.swift */; };
 		D3F1BF5E1F97424200E7D356 /* StartGame.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F1BF5C1F97424200E7D356 /* StartGame.xib */; };
 		D3F1BF611F974CEE00E7D356 /* JoinGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F1BF5F1F974CEE00E7D356 /* JoinGameViewController.swift */; };
@@ -36,8 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D3239FCE1FAB1E380041A1A0 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
-		D3239FCF1FAB1E380041A1A0 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		D327DF9E1FADFC0000AFB2AE /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		D327DF9F1FADFC0000AFB2AE /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		D327DFA41FAE04B700AFB2AE /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		D327DFA51FAE04B700AFB2AE /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		D36C64861F8A1CC1008A548F /* DoYouKnowMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoYouKnowMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D36C64891F8A1CC1008A548F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D36C648B1F8A1CC1008A548F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,9 +50,6 @@
 		D36C64A01F8A1CC1008A548F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D391308F1F8F5DAC00EF2DFD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		D39130901F8F5DAC00EF2DFD /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
-		D3E8F8341FA200A000B299A1 /* SelectQuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectQuestionsView.swift; sourceTree = "<group>"; };
-		D3E8F8351FA200A000B299A1 /* SelectQuestionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectQuestionsView.xib; sourceTree = "<group>"; };
-		D3EE86F71FA87C96009D968F /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		D3F1BF5B1F97424200E7D356 /* StartGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGameView.swift; sourceTree = "<group>"; };
 		D3F1BF5C1F97424200E7D356 /* StartGame.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartGame.xib; sourceTree = "<group>"; };
 		D3F1BF5F1F974CEE00E7D356 /* JoinGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinGameViewController.swift; sourceTree = "<group>"; };
@@ -106,13 +104,12 @@
 				D39130901F8F5DAC00EF2DFD /* LoginView.xib */,
 				D3F1BF5B1F97424200E7D356 /* StartGameView.swift */,
 				D3F1BF5C1F97424200E7D356 /* StartGame.xib */,
-				D3EE86F71FA87C96009D968F /* TableViewController.swift */,
-				D3E8F8341FA200A000B299A1 /* SelectQuestionsView.swift */,
-				D3E8F8351FA200A000B299A1 /* SelectQuestionsView.xib */,
-				D3239FCE1FAB1E380041A1A0 /* CustomTableViewCell.swift */,
-				D3239FCF1FAB1E380041A1A0 /* CustomTableViewCell.xib */,
 				D3F1BF5F1F974CEE00E7D356 /* JoinGameViewController.swift */,
 				D3F1BF601F974CEE00E7D356 /* JoinGameViewController.xib */,
+				D327DF9E1FADFC0000AFB2AE /* TableViewController.swift */,
+				D327DF9F1FADFC0000AFB2AE /* TableViewController.xib */,
+				D327DFA41FAE04B700AFB2AE /* CustomTableViewCell.swift */,
+				D327DFA51FAE04B700AFB2AE /* CustomTableViewCell.xib */,
 			);
 			path = DoYouKnowMe;
 			sourceTree = "<group>";
@@ -214,9 +211,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3E8F8371FA200A000B299A1 /* SelectQuestionsView.xib in Resources */,
-				D3239FD11FAB1E380041A1A0 /* CustomTableViewCell.xib in Resources */,
 				D36C64941F8A1CC1008A548F /* LaunchScreen.storyboard in Resources */,
+				D327DFA71FAE04B700AFB2AE /* CustomTableViewCell.xib in Resources */,
+				D327DFA11FADFC0000AFB2AE /* TableViewController.xib in Resources */,
 				D36C64911F8A1CC1008A548F /* Assets.xcassets in Resources */,
 				D39130921F8F5DAC00EF2DFD /* LoginView.xib in Resources */,
 				D3F1BF5E1F97424200E7D356 /* StartGame.xib in Resources */,
@@ -239,12 +236,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3F1BF611F974CEE00E7D356 /* JoinGameViewController.swift in Sources */,
-				D3EE86F81FA87C96009D968F /* TableViewController.swift in Sources */,
-				D3239FD01FAB1E380041A1A0 /* CustomTableViewCell.swift in Sources */,
 				D36C648C1F8A1CC1008A548F /* ViewController.swift in Sources */,
 				D36C648A1F8A1CC1008A548F /* AppDelegate.swift in Sources */,
+				D327DFA61FAE04B700AFB2AE /* CustomTableViewCell.swift in Sources */,
+				D327DFA01FADFC0000AFB2AE /* TableViewController.swift in Sources */,
 				D3F1BF5D1F97424200E7D356 /* StartGameView.swift in Sources */,
-				D3E8F8361FA200A000B299A1 /* SelectQuestionsView.swift in Sources */,
 				D39130911F8F5DAC00EF2DFD /* LoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
