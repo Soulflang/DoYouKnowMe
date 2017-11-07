@@ -135,6 +135,7 @@
 		D36C647D1F8A1CC1008A548F = {
 			isa = PBXGroup;
 			children = (
+				276997231FAFD09A00CE120C /* Media.xcassets */,
 				D36C64881F8A1CC1008A548F /* DoYouKnowMe */,
 				D36C649D1F8A1CC1008A548F /* DoYouKnowMeTests */,
 				D36C64871F8A1CC1008A548F /* Products */,
@@ -269,6 +270,7 @@
 			files = (
 				D36C64941F8A1CC1008A548F /* LaunchScreen.storyboard in Resources */,
 				D327DFA71FAE04B700AFB2AE /* CustomTableViewCell.xib in Resources */,
+				276997241FAFD09A00CE120C /* Media.xcassets in Resources */,
 				D327DFA11FADFC0000AFB2AE /* TableViewController.xib in Resources */,
 				D36C64911F8A1CC1008A548F /* Assets.xcassets in Resources */,
 				D39130921F8F5DAC00EF2DFD /* LoginView.xib in Resources */,
