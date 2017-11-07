@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let login = LoginView()
         let navigationController = UINavigationController(rootViewController: login)
         navigationController.navigationBar.isTranslucent = false
+        navigationController.navigationBar.barTintColor = UIColor(red:0.80, green:0.49, blue:0.35, alpha:1.0)
+        navigationController.navigationBar.tintColor = UIColor.white
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         // Override point for customization after application launch.
