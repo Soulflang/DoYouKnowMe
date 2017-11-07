@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let login = LoginView()
         let navigationController = UINavigationController(rootViewController: login)
         navigationController.navigationBar.isTranslucent = false
-        window?.rootViewController = login
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         // Override point for customization after application launch.
         return true
