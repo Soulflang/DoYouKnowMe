@@ -14,7 +14,9 @@ class LoginView: UIViewController {
     
     @IBAction func loginButton(_ sender: UIButton) {
         let viewController: UIViewController = JoinGameViewController() as UIViewController
-        self.present(viewController,animated:true, completion: nil)
+        //self.present(viewController,animated:true, completion: nil)
+        self.navigationController?.pushViewController(viewController, animated: true)
+        
     }
     
     
@@ -25,10 +27,20 @@ class LoginView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
         // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
