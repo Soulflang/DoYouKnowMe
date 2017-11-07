@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,46 +19,73 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zew-GK-II8">
-                    <rect key="frame" x="164" y="98" width="46" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Create"/>
-                    <connections>
-                        <action selector="createGameButton:" destination="-1" eventType="touchUpInside" id="LZi-Hx-Rxl"/>
-                    </connections>
-                </button>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l2W-8t-JGH">
-                    <rect key="frame" x="16" y="191" width="343" height="456"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                </tableView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMi-ew-XcX">
-                    <rect key="frame" x="179" y="124" width="16" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Join a Game Below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66n-od-yYd">
-                    <rect key="frame" x="122" y="145" width="130" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hqv-yA-4Xa">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="85M-5m-YS4">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zew-GK-II8">
+                            <rect key="frame" x="194" y="565" width="181" height="30"/>
+                            <state key="normal" title="Create"/>
+                            <connections>
+                                <action selector="createGameButton:" destination="-1" eventType="touchUpInside" id="LZi-Hx-Rxl"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laR-Sh-YQa">
+                            <rect key="frame" x="0.0" y="565" width="186" height="30"/>
+                            <state key="normal" title="Join"/>
+                        </button>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l2W-8t-JGH">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="557"/>
+                            <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="375" id="7NR-Yx-8jV"/>
+                                <constraint firstAttribute="height" constant="557" id="Kpg-S5-sM5"/>
+                            </constraints>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="laR-Sh-YQa" firstAttribute="top" secondItem="l2W-8t-JGH" secondAttribute="bottom" constant="8" id="21D-ER-Kyt"/>
+                        <constraint firstAttribute="trailing" secondItem="l2W-8t-JGH" secondAttribute="trailing" id="Cwc-Rq-lId"/>
+                        <constraint firstItem="l2W-8t-JGH" firstAttribute="leading" secondItem="85M-5m-YS4" secondAttribute="leading" id="D5M-bS-sow"/>
+                        <constraint firstAttribute="bottom" secondItem="zew-GK-II8" secondAttribute="bottom" constant="8" id="E6c-Hd-epj"/>
+                        <constraint firstItem="zew-GK-II8" firstAttribute="top" secondItem="l2W-8t-JGH" secondAttribute="bottom" constant="8" id="QRp-jd-TeI"/>
+                        <constraint firstItem="zew-GK-II8" firstAttribute="leading" secondItem="laR-Sh-YQa" secondAttribute="trailing" constant="8" id="V35-46-1Yb"/>
+                        <constraint firstItem="zew-GK-II8" firstAttribute="leading" secondItem="laR-Sh-YQa" secondAttribute="trailing" constant="8" id="ezL-uG-i6O"/>
+                        <constraint firstItem="laR-Sh-YQa" firstAttribute="leading" secondItem="85M-5m-YS4" secondAttribute="leading" id="idt-zF-9I0"/>
+                        <constraint firstAttribute="bottom" secondItem="laR-Sh-YQa" secondAttribute="bottom" constant="8" id="njZ-4g-uhT"/>
+                        <constraint firstItem="zew-GK-II8" firstAttribute="top" secondItem="l2W-8t-JGH" secondAttribute="bottom" constant="8" id="tOT-XO-ZB4"/>
+                        <constraint firstAttribute="trailing" secondItem="zew-GK-II8" secondAttribute="trailing" id="vAG-n9-Uar"/>
+                    </constraints>
+                </view>
+                <navigationBar contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hqv-yA-4Xa">
                     <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="aJe-Su-pLz"/>
+                    </constraints>
+                    <color key="barTintColor" red="0.87058823529999996" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                     <items>
                         <navigationItem title="Title" id="bBp-1o-rV1">
-                            <barButtonItem key="leftBarButtonItem" title="Back" style="plain" id="FIc-zB-5pq"/>
+                            <barButtonItem key="leftBarButtonItem" title="Back" image="back_btn" style="plain" id="FIc-zB-5pq"/>
                         </navigationItem>
                     </items>
                 </navigationBar>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.87058823529999996" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Hqv-yA-4Xa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Gbc-1p-F3c"/>
+                <constraint firstItem="85M-5m-YS4" firstAttribute="top" secondItem="Hqv-yA-4Xa" secondAttribute="bottom" id="NQh-vX-oE1"/>
+                <constraint firstItem="85M-5m-YS4" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="OWH-n6-kON"/>
+                <constraint firstItem="85M-5m-YS4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PHP-e3-BTq"/>
+                <constraint firstItem="Hqv-yA-4Xa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Rg1-SA-e2U"/>
+                <constraint firstItem="Hqv-yA-4Xa" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="WwO-nq-YBM"/>
+                <constraint firstItem="85M-5m-YS4" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="jfg-LX-hHZ"/>
+                <constraint firstItem="85M-5m-YS4" firstAttribute="top" secondItem="Hqv-yA-4Xa" secondAttribute="bottom" id="yKD-ON-yqj"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="34.5" y="54.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="back_btn" width="13" height="21"/>
+    </resources>
 </document>
