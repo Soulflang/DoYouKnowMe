@@ -12,7 +12,8 @@ class StartGame: UIViewController {
     
     @IBAction func selectQuestions(_ sender: UIButton) {
         let viewController: UIViewController = TableViewController() as UIViewController
-        self.present(viewController,animated:true, completion: nil)
+        //self.present(viewController,animated:true, completion: nil)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     

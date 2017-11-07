@@ -24,6 +24,7 @@ class TableViewController: UIViewController, UITableViewDataSource {
         tableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "cellReuseIdentifier")
         
         tableView.dataSource = self
+        
     }
     
     

@@ -12,7 +12,9 @@ class JoinGameViewController: UIViewController {
     
 
     @IBAction func createGameButton(_ sender: UIButton) {
-        let viewController: UIViewController = StartGame() as UIViewController; self.present(viewController, animated: true, completion: nil)
+        let viewController: UIViewController = StartGame() as UIViewController;
+        //self.present(viewController, animated: true, completion: nil)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     override func viewDidLoad() {
