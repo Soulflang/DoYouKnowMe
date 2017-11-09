@@ -44,9 +44,9 @@ class TableViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier") as! CustomTableViewCell
         
-        let text = data[indexPath.row] + "\tkan vi lave en lang tekst uden det ser mærkeligt ud i vores table view"
+        let text = data[indexPath.row] + "\tkan vi lave en lang tekst uden det ser mærkeligt ud i vores table view iuhwrf iuhwf iherwfgi huieruhg iuherg ihueir ghiuhreg iuhergi hieurhg ihureg iherig heiurhg eiruhg uiehrg uihi eheruhg eio"
         
-        cell.label.text = text
+        cell.questionTextView.text = text
         
         return cell
         
