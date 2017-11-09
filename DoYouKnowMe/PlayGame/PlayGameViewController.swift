@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PlayGame: UIViewController {
+class PlayGameViewController: UIViewController {
     
     @IBOutlet weak var PlayerOnePic: UIImageView!
     @IBOutlet weak var PlayerTwoPic: UIImageView!

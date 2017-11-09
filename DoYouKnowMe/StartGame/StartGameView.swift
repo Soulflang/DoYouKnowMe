@@ -15,6 +15,12 @@ class StartGame: UIViewController {
         //self.present(viewController,animated:true, completion: nil)
         self.navigationController?.pushViewController(viewController, animated: true)
     }
+    @IBAction func startGame(_ sender: UIButton) {
+        let viewController: UIViewController = PlayGameViewController() as UIViewController
+        //self.present(viewController,animated:true, completion: nil)
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
     
     
     override func viewDidLoad() {
