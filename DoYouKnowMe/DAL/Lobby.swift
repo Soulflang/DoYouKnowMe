@@ -14,8 +14,4 @@ class Lobby {
         self.games = games
     }
     
-    //Returns a list of games in the lobby
-    func getGames() -> [GameListItem] {
-        return games
-    }
 }

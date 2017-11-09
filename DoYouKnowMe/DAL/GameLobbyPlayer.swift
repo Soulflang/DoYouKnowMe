@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  LobbyPlayer.swift
 //  DoYouKnowMe
 //
 //  Created by Mathias R. Larsen on 09/11/2017.
@@ -7,19 +7,14 @@
 //
 
 import Foundation
-class LobbyPlayer {
+class GameLobbyPlayer {
     var name: String
-    var isReady: bool
+    var isReady: Bool = false
     
-    init(name: String,isReady: bool) {
+    init(name: String,isReady: Bool) {
         self.name = name
         self.isReady = isReady
     }
     
-    func playerIsReady() -> bool{
-        return isReady
-    }
-    func getPlayerName() -> String{
-        return name
-    }
+    
 }
