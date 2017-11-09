@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,14 +16,29 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vX7-gK-DdW">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGP-SM-RXk">
+                    <rect key="frame" x="0.0" y="342" width="375" height="29"/>
+                    <color key="backgroundColor" red="0.87058823529999996" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="GGP-SM-RXk" secondAttribute="height" multiplier="375:29" id="XIi-tE-h7e"/>
+                    </constraints>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eEW-cW-JAK">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vX7-gK-DdW">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="vX7-gK-DdW" secondAttribute="height" multiplier="375:128" id="8RH-NT-ixk"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dVP-ey-1Un">
+                    <rect key="frame" x="0.0" y="128" width="375" height="69"/>
+                    <color key="backgroundColor" red="0.45098039220000002" green="0.45098039220000002" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="dVP-ey-1Un" secondAttribute="height" multiplier="125:23" id="f6J-0m-cTl"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEW-cW-JAK">
                     <rect key="frame" x="0.0" y="371" width="375" height="296"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btU-m7-gPU">
                             <rect key="frame" x="0.0" y="0.0" width="191" height="140"/>
@@ -47,20 +63,35 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dVP-ey-1Un">
-                    <rect key="frame" x="0.0" y="125" width="375" height="69"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.45098039220000002" green="0.45098039220000002" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
-                </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZGe-Oc-rzu">
-                    <rect key="frame" x="0.0" y="210" width="375" height="145"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZGe-Oc-rzu">
+                    <rect key="frame" x="0.0" y="197" width="375" height="145"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ZGe-Oc-rzu" secondAttribute="height" multiplier="75:29" id="6HD-ZN-Af4"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="0.87058823529999996" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="ZGe-Oc-rzu" firstAttribute="leading" secondItem="qTZ-6y-MiO" secondAttribute="leading" id="53n-ke-bDP"/>
+                <constraint firstItem="dVP-ey-1Un" firstAttribute="leading" secondItem="qTZ-6y-MiO" secondAttribute="leading" id="6lK-zg-sdS"/>
+                <constraint firstItem="GGP-SM-RXk" firstAttribute="leading" secondItem="ZGe-Oc-rzu" secondAttribute="leading" id="CQu-DH-frA"/>
+                <constraint firstItem="GGP-SM-RXk" firstAttribute="top" secondItem="ZGe-Oc-rzu" secondAttribute="bottom" id="GhW-BW-kak"/>
+                <constraint firstItem="GGP-SM-RXk" firstAttribute="leading" secondItem="eEW-cW-JAK" secondAttribute="leading" id="Ihc-Yy-9gD"/>
+                <constraint firstItem="ZGe-Oc-rzu" firstAttribute="top" secondItem="dVP-ey-1Un" secondAttribute="bottom" id="NEA-vS-XMv"/>
+                <constraint firstItem="vX7-gK-DdW" firstAttribute="trailing" secondItem="qTZ-6y-MiO" secondAttribute="trailing" id="O4B-LT-jLQ"/>
+                <constraint firstItem="vX7-gK-DdW" firstAttribute="leading" secondItem="qTZ-6y-MiO" secondAttribute="leading" id="OSz-PM-LBH"/>
+                <constraint firstItem="eEW-cW-JAK" firstAttribute="top" secondItem="GGP-SM-RXk" secondAttribute="bottom" id="XLv-16-ehx"/>
+                <constraint firstItem="dVP-ey-1Un" firstAttribute="top" secondItem="vX7-gK-DdW" secondAttribute="bottom" id="XRy-XM-6cB"/>
+                <constraint firstItem="vX7-gK-DdW" firstAttribute="top" secondItem="dfa-iG-fJd" secondAttribute="top" id="XoA-Rm-wt9"/>
+                <constraint firstItem="ZGe-Oc-rzu" firstAttribute="trailing" secondItem="qTZ-6y-MiO" secondAttribute="trailing" id="Yww-5h-HJ0"/>
+                <constraint firstItem="GGP-SM-RXk" firstAttribute="trailing" secondItem="eEW-cW-JAK" secondAttribute="trailing" id="a77-J5-rFt"/>
+                <constraint firstItem="GGP-SM-RXk" firstAttribute="trailing" secondItem="qTZ-6y-MiO" secondAttribute="trailing" id="koy-hX-wEq"/>
+                <constraint firstItem="eEW-cW-JAK" firstAttribute="bottom" secondItem="qTZ-6y-MiO" secondAttribute="bottom" id="owx-fa-S1t"/>
+                <constraint firstItem="dVP-ey-1Un" firstAttribute="trailing" secondItem="qTZ-6y-MiO" secondAttribute="trailing" id="wGr-Bb-ua9"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="qTZ-6y-MiO"/>
-            <point key="canvasLocation" x="16.5" y="29.5"/>
+            <point key="canvasLocation" x="15.5" y="28.5"/>
         </view>
     </objects>
 </document>
