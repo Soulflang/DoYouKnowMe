@@ -16,11 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-       // let login = LoginView()
+        let login = LoginView()
         
         // Change this to get another starting view for test purposes
-        let testView = LoginView()
-        let navigationController = UINavigationController(rootViewController: testView)
+        let testView = GamesListViewController()
+        let navigationController = UINavigationController(rootViewController: login)
         navigationController.navigationBar.isTranslucent = false
         navigationController.navigationBar.barTintColor = UIColor(red:0.80, green:0.49, blue:0.35, alpha:1.0)
         navigationController.navigationBar.tintColor = UIColor.white
