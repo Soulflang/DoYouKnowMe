@@ -21,4 +21,17 @@ class GameListItem{
         self.maxPlayers = maxPlayers
         self.players = players
     }
+    
+    func getGameName() -> String {
+        return gameName
+    }
+    func getCreatorName() -> String {
+        return creatorName
+    }
+    func getMaxPlayers() -> Int {
+        return maxPlayers
+    }
+    func getConnectedPlayers() -> Int {
+        return players
+    }
 }
