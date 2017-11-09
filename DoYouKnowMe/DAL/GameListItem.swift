@@ -8,10 +8,12 @@
 
 import Foundation
 class GameListItem{
-    var gameName: String
-    var creatorName: String
-    var maxPlayers: Int
-    var players: Int
+    var gameName: String = ""
+    var creatorName: String = ""
+    var maxPlayers: Int = 0
+    var players: Int = 0
+    
+    init() { }
     
     init(gameName: String, creatorName: String, maxPlayers: Int, players: Int){
         self.gameName = gameName
