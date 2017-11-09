@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="dfa-iG-fJd">
+        <view contentMode="scaleToFill" id="dfa-iG-fJd" customClass="PlayGameViewController">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
@@ -141,6 +141,12 @@
                 <constraint firstItem="dVP-ey-1Un" firstAttribute="trailing" secondItem="qTZ-6y-MiO" secondAttribute="trailing" id="wGr-Bb-ua9"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="qTZ-6y-MiO"/>
+            <connections>
+                <outlet property="PlayerFourPic" destination="QBa-cG-MjQ" id="oyT-xl-bRG"/>
+                <outlet property="PlayerOnePic" destination="fAK-aU-d1S" id="eKx-X9-aDH"/>
+                <outlet property="PlayerThreePic" destination="lGe-ma-pSK" id="IEt-bq-uVx"/>
+                <outlet property="PlayerTwoPic" destination="hIS-k9-RqT" id="Tlm-va-zli"/>
+            </connections>
             <point key="canvasLocation" x="15.5" y="28.5"/>
         </view>
     </objects>
