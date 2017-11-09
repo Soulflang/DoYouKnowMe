@@ -14,6 +14,7 @@
 		D327DFA11FADFC0000AFB2AE /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D327DF9F1FADFC0000AFB2AE /* TableViewController.xib */; };
 		D327DFA61FAE04B700AFB2AE /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D327DFA41FAE04B700AFB2AE /* CustomTableViewCell.swift */; };
 		D327DFA71FAE04B700AFB2AE /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D327DFA51FAE04B700AFB2AE /* CustomTableViewCell.xib */; };
+		D35169C11FB45AC500A78176 /* GameListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35169C01FB45AC500A78176 /* GameListItem.swift */; };
 		D36C648A1F8A1CC1008A548F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36C64891F8A1CC1008A548F /* AppDelegate.swift */; };
 		D36C64911F8A1CC1008A548F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D36C64901F8A1CC1008A548F /* Assets.xcassets */; };
 		D36C64941F8A1CC1008A548F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D36C64921F8A1CC1008A548F /* LaunchScreen.storyboard */; };
@@ -46,6 +47,7 @@
 		D327DF9F1FADFC0000AFB2AE /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
 		D327DFA41FAE04B700AFB2AE /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		D327DFA51FAE04B700AFB2AE /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		D35169C01FB45AC500A78176 /* GameListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListItem.swift; sourceTree = "<group>"; };
 		D36C64861F8A1CC1008A548F /* DoYouKnowMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoYouKnowMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D36C64891F8A1CC1008A548F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D36C64901F8A1CC1008A548F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -145,6 +147,14 @@
 			path = Brians_Tests;
 			sourceTree = "<group>";
 		};
+		D35169BF1FB45A9100A78176 /* DAL */ = {
+			isa = PBXGroup;
+			children = (
+				D35169C01FB45AC500A78176 /* GameListItem.swift */,
+			);
+			path = DAL;
+			sourceTree = "<group>";
+		};
 		D36C647D1F8A1CC1008A548F = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +178,7 @@
 		D36C64881F8A1CC1008A548F /* DoYouKnowMe */ = {
 			isa = PBXGroup;
 			children = (
+				D35169BF1FB45A9100A78176 /* DAL */,
 				275BBDD11FB4440200B91387 /* PlayGame */,
 				D3306A531FB1DDED0038759C /* Brians_Tests */,
 				D3306A521FB1D6540038759C /* StartGame */,
@@ -364,6 +375,7 @@
 			files = (
 				D3F1BF611F974CEE00E7D356 /* JoinGameViewController.swift in Sources */,
 				275BBDD31FB4442F00B91387 /* PlayGameViewController.swift in Sources */,
+				D35169C11FB45AC500A78176 /* GameListItem.swift in Sources */,
 				D36C648A1F8A1CC1008A548F /* AppDelegate.swift in Sources */,
 				D327DFA61FAE04B700AFB2AE /* CustomTableViewCell.swift in Sources */,
 				D327DFA01FADFC0000AFB2AE /* TableViewController.swift in Sources */,
