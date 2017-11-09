@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27406D771FB4F443006C9CB2 /* Lobby.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27406D761FB4F443006C9CB2 /* Lobby.swift */; };
+		27406D791FB4F452006C9CB2 /* LobbyPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27406D781FB4F452006C9CB2 /* LobbyPlayer.swift */; };
+		27406D7B1FB4F470006C9CB2 /* GameLobby.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27406D7A1FB4F470006C9CB2 /* GameLobby.swift */; };
 		275BBDD31FB4442F00B91387 /* PlayGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275BBDD21FB4442F00B91387 /* PlayGameViewController.swift */; };
 		275BBDD51FB4444900B91387 /* PlayGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 275BBDD41FB4444900B91387 /* PlayGameViewController.xib */; };
 		66DB2B7E02EF43BC55313376 /* Pods_DoYouKnowMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8616F60F16723095976C3DA3 /* Pods_DoYouKnowMe.framework */; };
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27406D761FB4F443006C9CB2 /* Lobby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lobby.swift; sourceTree = "<group>"; };
+		27406D781FB4F452006C9CB2 /* LobbyPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyPlayer.swift; sourceTree = "<group>"; };
+		27406D7A1FB4F470006C9CB2 /* GameLobby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLobby.swift; sourceTree = "<group>"; };
 		275BBDD21FB4442F00B91387 /* PlayGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayGameViewController.swift; sourceTree = "<group>"; };
 		275BBDD41FB4444900B91387 /* PlayGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayGameViewController.xib; sourceTree = "<group>"; };
 		4A012E83C8C89C2E514C0B37 /* Pods-DoYouKnowMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoYouKnowMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoYouKnowMe/Pods-DoYouKnowMe.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +157,9 @@
 			isa = PBXGroup;
 			children = (
 				D35169C01FB45AC500A78176 /* GameListItem.swift */,
+				27406D761FB4F443006C9CB2 /* Lobby.swift */,
+				27406D781FB4F452006C9CB2 /* LobbyPlayer.swift */,
+				27406D7A1FB4F470006C9CB2 /* GameLobby.swift */,
 			);
 			path = DAL;
 			sourceTree = "<group>";
@@ -374,10 +383,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3F1BF611F974CEE00E7D356 /* JoinGameViewController.swift in Sources */,
+				27406D7B1FB4F470006C9CB2 /* GameLobby.swift in Sources */,
 				275BBDD31FB4442F00B91387 /* PlayGameViewController.swift in Sources */,
 				D35169C11FB45AC500A78176 /* GameListItem.swift in Sources */,
 				D36C648A1F8A1CC1008A548F /* AppDelegate.swift in Sources */,
 				D327DFA61FAE04B700AFB2AE /* CustomTableViewCell.swift in Sources */,
+				27406D791FB4F452006C9CB2 /* LobbyPlayer.swift in Sources */,
+				27406D771FB4F443006C9CB2 /* Lobby.swift in Sources */,
 				D327DFA01FADFC0000AFB2AE /* TableViewController.swift in Sources */,
 				D3F1BF5D1F97424200E7D356 /* StartGameView.swift in Sources */,
 				D39130911F8F5DAC00EF2DFD /* LoginView.swift in Sources */,
