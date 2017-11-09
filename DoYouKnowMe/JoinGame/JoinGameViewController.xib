@@ -19,8 +19,9 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l2W-8t-JGH">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l2W-8t-JGH">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="614"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zew-GK-II8">
@@ -41,8 +42,11 @@
                 <constraint firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="OWH-n6-kON"/>
                 <constraint firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PHP-e3-BTq"/>
                 <constraint firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Rg1-SA-e2U"/>
+                <constraint firstItem="zew-GK-II8" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="VLr-zf-Fov"/>
                 <constraint firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="WwO-nq-YBM"/>
+                <constraint firstItem="zew-GK-II8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="foe-nd-m8g"/>
                 <constraint firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="jfg-LX-hHZ"/>
+                <constraint firstItem="zew-GK-II8" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="kym-jf-jQO"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="34.5" y="54.5"/>
