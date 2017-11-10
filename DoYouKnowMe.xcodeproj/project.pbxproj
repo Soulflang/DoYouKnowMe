@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		275BBDD31FB4442F00B91387 /* PlayGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275BBDD21FB4442F00B91387 /* PlayGameViewController.swift */; };
 		275BBDD51FB4444900B91387 /* PlayGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 275BBDD41FB4444900B91387 /* PlayGameViewController.xib */; };
+		5A6B005D1FB4EF32009BCE11 /* Lobby.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B005C1FB4EF32009BCE11 /* Lobby.swift */; };
+		5A6B005F1FB4F020009BCE11 /* GameLobbyPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B005E1FB4F020009BCE11 /* GameLobbyPlayer.swift */; };
+		5A6B00611FB4F086009BCE11 /* GameLobby.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B00601FB4F086009BCE11 /* GameLobby.swift */; };
+		5A6B00651FB4F371009BCE11 /* GamesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B00631FB4F371009BCE11 /* GamesListViewController.swift */; };
+		5A6B00661FB4F371009BCE11 /* GamesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A6B00641FB4F371009BCE11 /* GamesListViewController.xib */; };
+		5A6B00691FB4FA05009BCE11 /* GamesListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B00671FB4FA05009BCE11 /* GamesListViewCell.swift */; };
+		5A6B006A1FB4FA05009BCE11 /* GamesListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A6B00681FB4FA05009BCE11 /* GamesListViewCell.xib */; };
 		66DB2B7E02EF43BC55313376 /* Pods_DoYouKnowMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8616F60F16723095976C3DA3 /* Pods_DoYouKnowMe.framework */; };
 		D327DFA01FADFC0000AFB2AE /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D327DF9E1FADFC0000AFB2AE /* TableViewController.swift */; };
 		D327DFA11FADFC0000AFB2AE /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D327DF9F1FADFC0000AFB2AE /* TableViewController.xib */; };
@@ -42,6 +49,13 @@
 		275BBDD41FB4444900B91387 /* PlayGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayGameViewController.xib; sourceTree = "<group>"; };
 		4A012E83C8C89C2E514C0B37 /* Pods-DoYouKnowMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoYouKnowMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoYouKnowMe/Pods-DoYouKnowMe.release.xcconfig"; sourceTree = "<group>"; };
 		4DC09E03EA813507FB28EFBC /* Pods-DoYouKnowMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoYouKnowMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoYouKnowMe/Pods-DoYouKnowMe.debug.xcconfig"; sourceTree = "<group>"; };
+		5A6B005C1FB4EF32009BCE11 /* Lobby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lobby.swift; sourceTree = "<group>"; };
+		5A6B005E1FB4F020009BCE11 /* GameLobbyPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLobbyPlayer.swift; sourceTree = "<group>"; };
+		5A6B00601FB4F086009BCE11 /* GameLobby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLobby.swift; sourceTree = "<group>"; };
+		5A6B00631FB4F371009BCE11 /* GamesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesListViewController.swift; sourceTree = "<group>"; };
+		5A6B00641FB4F371009BCE11 /* GamesListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GamesListViewController.xib; sourceTree = "<group>"; };
+		5A6B00671FB4FA05009BCE11 /* GamesListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesListViewCell.swift; sourceTree = "<group>"; };
+		5A6B00681FB4FA05009BCE11 /* GamesListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GamesListViewCell.xib; sourceTree = "<group>"; };
 		8616F60F16723095976C3DA3 /* Pods_DoYouKnowMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoYouKnowMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D327DF9E1FADFC0000AFB2AE /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		D327DF9F1FADFC0000AFB2AE /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
@@ -101,6 +115,17 @@
 			path = PlayGame;
 			sourceTree = "<group>";
 		};
+		5A6B00621FB4F342009BCE11 /* GamesList */ = {
+			isa = PBXGroup;
+			children = (
+				5A6B00631FB4F371009BCE11 /* GamesListViewController.swift */,
+				5A6B00641FB4F371009BCE11 /* GamesListViewController.xib */,
+				5A6B00671FB4FA05009BCE11 /* GamesListViewCell.swift */,
+				5A6B00681FB4FA05009BCE11 /* GamesListViewCell.xib */,
+			);
+			path = GamesList;
+			sourceTree = "<group>";
+		};
 		B1C9C61ADEA8D45AB96FF490 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +176,9 @@
 			isa = PBXGroup;
 			children = (
 				D35169C01FB45AC500A78176 /* GameListItem.swift */,
+				5A6B005C1FB4EF32009BCE11 /* Lobby.swift */,
+				5A6B005E1FB4F020009BCE11 /* GameLobbyPlayer.swift */,
+				5A6B00601FB4F086009BCE11 /* GameLobby.swift */,
 			);
 			path = DAL;
 			sourceTree = "<group>";
@@ -178,6 +206,7 @@
 		D36C64881F8A1CC1008A548F /* DoYouKnowMe */ = {
 			isa = PBXGroup;
 			children = (
+				5A6B00621FB4F342009BCE11 /* GamesList */,
 				D35169BF1FB45A9100A78176 /* DAL */,
 				275BBDD11FB4440200B91387 /* PlayGame */,
 				D3306A531FB1DDED0038759C /* Brians_Tests */,
@@ -292,6 +321,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A6B00661FB4F371009BCE11 /* GamesListViewController.xib in Resources */,
 				D36C64941F8A1CC1008A548F /* LaunchScreen.storyboard in Resources */,
 				D327DFA71FAE04B700AFB2AE /* CustomTableViewCell.xib in Resources */,
 				275BBDD51FB4444900B91387 /* PlayGameViewController.xib in Resources */,
@@ -299,6 +329,7 @@
 				D36C64911F8A1CC1008A548F /* Assets.xcassets in Resources */,
 				D39130921F8F5DAC00EF2DFD /* LoginView.xib in Resources */,
 				D3F1BF5E1F97424200E7D356 /* StartGame.xib in Resources */,
+				5A6B006A1FB4FA05009BCE11 /* GamesListViewCell.xib in Resources */,
 				D3F1BF621F974CEE00E7D356 /* JoinGameViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,10 +405,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3F1BF611F974CEE00E7D356 /* JoinGameViewController.swift in Sources */,
+				5A6B00611FB4F086009BCE11 /* GameLobby.swift in Sources */,
 				275BBDD31FB4442F00B91387 /* PlayGameViewController.swift in Sources */,
 				D35169C11FB45AC500A78176 /* GameListItem.swift in Sources */,
+				5A6B00691FB4FA05009BCE11 /* GamesListViewCell.swift in Sources */,
+				5A6B005F1FB4F020009BCE11 /* GameLobbyPlayer.swift in Sources */,
 				D36C648A1F8A1CC1008A548F /* AppDelegate.swift in Sources */,
 				D327DFA61FAE04B700AFB2AE /* CustomTableViewCell.swift in Sources */,
+				5A6B005D1FB4EF32009BCE11 /* Lobby.swift in Sources */,
+				5A6B00651FB4F371009BCE11 /* GamesListViewController.swift in Sources */,
 				D327DFA01FADFC0000AFB2AE /* TableViewController.swift in Sources */,
 				D3F1BF5D1F97424200E7D356 /* StartGameView.swift in Sources */,
 				D39130911F8F5DAC00EF2DFD /* LoginView.swift in Sources */,
