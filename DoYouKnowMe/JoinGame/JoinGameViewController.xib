@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JoinGameViewController" customModule="DoYouKnowMe" customModuleProvider="target">
             <connections>
-                <outlet property="createGameOutlet" destination="zew-GK-II8" id="tH7-Op-v3h"/>
+                <outlet property="createGame" destination="zew-GK-II8" id="F3t-7s-pDn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

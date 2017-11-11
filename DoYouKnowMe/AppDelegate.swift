@@ -19,8 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let login = LoginView()
         
         // Change this to get another starting view for test purposes
-        let testView = GamesListViewController()
-        let navigationController = UINavigationController(rootViewController: login)
+        let testView = LoginView()
+        let navigationController = UINavigationController(rootViewController: testView)
         navigationController.navigationBar.isTranslucent = false
         navigationController.navigationBar.barTintColor = UIColor(red:0.80, green:0.49, blue:0.35, alpha:1.0)
         navigationController.navigationBar.tintColor = UIColor.white
