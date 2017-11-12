@@ -21,6 +21,8 @@
 		D327DFA11FADFC0000AFB2AE /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D327DF9F1FADFC0000AFB2AE /* TableViewController.xib */; };
 		D327DFA61FAE04B700AFB2AE /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D327DFA41FAE04B700AFB2AE /* CustomTableViewCell.swift */; };
 		D327DFA71FAE04B700AFB2AE /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D327DFA51FAE04B700AFB2AE /* CustomTableViewCell.xib */; };
+		D33C8CE51FB74C240014F437 /* JoinGameListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C8CE31FB74C240014F437 /* JoinGameListViewCell.swift */; };
+		D33C8CE61FB74C240014F437 /* JoinGameListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33C8CE41FB74C240014F437 /* JoinGameListViewCell.xib */; };
 		D35169C11FB45AC500A78176 /* GameListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35169C01FB45AC500A78176 /* GameListItem.swift */; };
 		D36C648A1F8A1CC1008A548F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36C64891F8A1CC1008A548F /* AppDelegate.swift */; };
 		D36C64911F8A1CC1008A548F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D36C64901F8A1CC1008A548F /* Assets.xcassets */; };
@@ -61,6 +63,8 @@
 		D327DF9F1FADFC0000AFB2AE /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
 		D327DFA41FAE04B700AFB2AE /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		D327DFA51FAE04B700AFB2AE /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		D33C8CE31FB74C240014F437 /* JoinGameListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinGameListViewCell.swift; sourceTree = "<group>"; };
+		D33C8CE41FB74C240014F437 /* JoinGameListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JoinGameListViewCell.xib; sourceTree = "<group>"; };
 		D35169C01FB45AC500A78176 /* GameListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListItem.swift; sourceTree = "<group>"; };
 		D36C64861F8A1CC1008A548F /* DoYouKnowMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoYouKnowMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D36C64891F8A1CC1008A548F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +152,8 @@
 			children = (
 				D3F1BF5F1F974CEE00E7D356 /* JoinGameViewController.swift */,
 				D3F1BF601F974CEE00E7D356 /* JoinGameViewController.xib */,
+				D33C8CE31FB74C240014F437 /* JoinGameListViewCell.swift */,
+				D33C8CE41FB74C240014F437 /* JoinGameListViewCell.xib */,
 			);
 			path = JoinGame;
 			sourceTree = "<group>";
@@ -326,6 +332,7 @@
 				D327DFA71FAE04B700AFB2AE /* CustomTableViewCell.xib in Resources */,
 				275BBDD51FB4444900B91387 /* PlayGameViewController.xib in Resources */,
 				D327DFA11FADFC0000AFB2AE /* TableViewController.xib in Resources */,
+				D33C8CE61FB74C240014F437 /* JoinGameListViewCell.xib in Resources */,
 				D36C64911F8A1CC1008A548F /* Assets.xcassets in Resources */,
 				D39130921F8F5DAC00EF2DFD /* LoginView.xib in Resources */,
 				D3F1BF5E1F97424200E7D356 /* StartGame.xib in Resources */,
@@ -414,6 +421,7 @@
 				D327DFA61FAE04B700AFB2AE /* CustomTableViewCell.swift in Sources */,
 				5A6B005D1FB4EF32009BCE11 /* Lobby.swift in Sources */,
 				5A6B00651FB4F371009BCE11 /* GamesListViewController.swift in Sources */,
+				D33C8CE51FB74C240014F437 /* JoinGameListViewCell.swift in Sources */,
 				D327DFA01FADFC0000AFB2AE /* TableViewController.swift in Sources */,
 				D3F1BF5D1F97424200E7D356 /* StartGameView.swift in Sources */,
 				D39130911F8F5DAC00EF2DFD /* LoginView.swift in Sources */,
