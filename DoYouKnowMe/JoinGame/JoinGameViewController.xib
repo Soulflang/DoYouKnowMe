@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,24 +28,60 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="56" id="LCy-7Y-iZH"/>
                     </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                     <state key="normal" title="Create game"/>
                     <connections>
                         <action selector="createGameButton:" destination="-1" eventType="touchUpInside" id="LZi-Hx-Rxl"/>
                     </connections>
                 </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l2W-8t-JGH">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="611"/>
+                    <rect key="frame" x="0.0" y="94" width="375" height="517"/>
                     <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Et-hS-wwm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Velkommen til!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qwn-ol-GbZ">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="37"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="37" id="aAX-Br-Ld0"/>
+                                <constraint firstAttribute="height" constant="37" id="udf-sN-RT9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vælg et åbent spil, eller opret et nyt." textAlignment="center" lineBreakMode="headTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOT-1M-ZQx">
+                            <rect key="frame" x="0.0" y="37" width="375" height="47"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="IOT-1M-ZQx" secondAttribute="trailing" id="6Yb-Vc-LMg"/>
+                        <constraint firstAttribute="bottom" secondItem="IOT-1M-ZQx" secondAttribute="bottom" constant="10" id="Cj6-2a-nGe"/>
+                        <constraint firstItem="IOT-1M-ZQx" firstAttribute="top" secondItem="Qwn-ol-GbZ" secondAttribute="bottom" id="HJy-Ey-7gg"/>
+                        <constraint firstItem="Qwn-ol-GbZ" firstAttribute="leading" secondItem="4Et-hS-wwm" secondAttribute="leading" id="Kc5-nk-aEc"/>
+                        <constraint firstAttribute="trailing" secondItem="Qwn-ol-GbZ" secondAttribute="trailing" id="bLm-B1-LvR"/>
+                        <constraint firstItem="Qwn-ol-GbZ" firstAttribute="top" secondItem="4Et-hS-wwm" secondAttribute="top" id="hNB-fh-elH"/>
+                        <constraint firstItem="IOT-1M-ZQx" firstAttribute="leading" secondItem="4Et-hS-wwm" secondAttribute="leading" id="lWY-4u-btu"/>
+                        <constraint firstAttribute="width" secondItem="4Et-hS-wwm" secondAttribute="height" multiplier="375:94" id="pkx-WQ-xPn"/>
+                    </constraints>
+                </view>
             </subviews>
             <constraints>
-                <constraint firstItem="zew-GK-II8" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="G3u-qr-rdG"/>
-                <constraint firstItem="zew-GK-II8" firstAttribute="leading" secondItem="l2W-8t-JGH" secondAttribute="leading" id="aee-sI-gJ5"/>
-                <constraint firstItem="l2W-8t-JGH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dNR-f3-9KX"/>
-                <constraint firstItem="l2W-8t-JGH" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="fdM-zj-Zbx"/>
-                <constraint firstItem="l2W-8t-JGH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jD4-4n-Z6u"/>
-                <constraint firstItem="zew-GK-II8" firstAttribute="top" secondItem="l2W-8t-JGH" secondAttribute="bottom" id="nMA-RR-spB"/>
-                <constraint firstItem="zew-GK-II8" firstAttribute="trailing" secondItem="l2W-8t-JGH" secondAttribute="trailing" id="oiE-In-lPt"/>
+                <constraint firstItem="zew-GK-II8" firstAttribute="trailing" secondItem="l2W-8t-JGH" secondAttribute="trailing" id="DBu-GL-J14"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zew-GK-II8" secondAttribute="trailing" id="Gz4-Mf-tRC"/>
+                <constraint firstItem="zew-GK-II8" firstAttribute="top" secondItem="l2W-8t-JGH" secondAttribute="bottom" id="LGF-g2-HfI"/>
+                <constraint firstItem="zew-GK-II8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PTH-ys-7Zd"/>
+                <constraint firstItem="l2W-8t-JGH" firstAttribute="top" secondItem="4Et-hS-wwm" secondAttribute="bottom" id="bw0-fa-OEH"/>
+                <constraint firstItem="zew-GK-II8" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="n4W-FE-5CQ"/>
+                <constraint firstItem="zew-GK-II8" firstAttribute="leading" secondItem="l2W-8t-JGH" secondAttribute="leading" id="o4t-f8-et4"/>
+                <constraint firstItem="4Et-hS-wwm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="oRI-ps-t14"/>
+                <constraint firstItem="zew-GK-II8" firstAttribute="trailing" secondItem="4Et-hS-wwm" secondAttribute="trailing" id="oVS-tZ-R4e"/>
+                <constraint firstItem="4Et-hS-wwm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wud-cp-y8I"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="34.5" y="54.5"/>
