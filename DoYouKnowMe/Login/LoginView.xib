@@ -21,30 +21,40 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Name" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="20" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="yQt-Jr-7kc">
+                <textField opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Name" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="20" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="yQt-Jr-7kc" customClass="DesignableUITextField" customModule="DoYouKnowMe" customModuleProvider="target">
                     <rect key="frame" x="20" y="551" width="335" height="44"/>
                     <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="yQt-Jr-7kc" secondAttribute="height" multiplier="335:44" id="661-H0-gu6"/>
                     </constraints>
-                    <nil key="textColor"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.60392156860000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" textContentType="name"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                            <color key="value" red="0.87058823529411766" green="0.52549019607843139" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.59999999999999998" green="0.60392156862745094" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="profile"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                            <color key="value" red="0.45098039220000002" green="0.45098039220000002" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="kasseBaggrund">
+                            <color key="value" red="0.87058823529999996" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d34-eS-88a">
                     <rect key="frame" x="20" y="603" width="335" height="44"/>
-                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.87058823529999996" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="d34-eS-88a" secondAttribute="height" multiplier="335:44" id="5J2-pR-SsQ"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                     <state key="normal" title="Login">
-                        <color key="titleColor" red="0.87058823529999996" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.45098039215686275" green="0.45098039215686275" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <connections>
                         <action selector="loginButton:" destination="-1" eventType="touchUpInside" id="XH3-B7-jMM"/>
@@ -67,7 +77,7 @@
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="0.87058823529999996" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.45098039215686275" green="0.45098039215686275" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="yQt-Jr-7kc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="0rU-f9-fB7"/>
                 <constraint firstItem="oYR-3F-JjW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1Ry-bs-YDV"/>
@@ -90,5 +100,6 @@
     </objects>
     <resources>
         <image name="logo" width="1494" height="880"/>
+        <image name="profile" width="15" height="15"/>
     </resources>
 </document>

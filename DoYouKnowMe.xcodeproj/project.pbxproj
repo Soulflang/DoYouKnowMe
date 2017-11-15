@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		275BBDD31FB4442F00B91387 /* PlayGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275BBDD21FB4442F00B91387 /* PlayGameViewController.swift */; };
 		275BBDD51FB4444900B91387 /* PlayGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 275BBDD41FB4444900B91387 /* PlayGameViewController.xib */; };
+		2792FDAB1FBCF6F900B1278D /* DesignableUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2792FDAA1FBCF6F900B1278D /* DesignableUITextField.swift */; };
 		5A6B005D1FB4EF32009BCE11 /* Lobby.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B005C1FB4EF32009BCE11 /* Lobby.swift */; };
 		5A6B005F1FB4F020009BCE11 /* GameLobbyPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B005E1FB4F020009BCE11 /* GameLobbyPlayer.swift */; };
 		5A6B00611FB4F086009BCE11 /* GameLobby.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B00601FB4F086009BCE11 /* GameLobby.swift */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		275BBDD21FB4442F00B91387 /* PlayGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayGameViewController.swift; sourceTree = "<group>"; };
 		275BBDD41FB4444900B91387 /* PlayGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayGameViewController.xib; sourceTree = "<group>"; };
+		2792FDAA1FBCF6F900B1278D /* DesignableUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUITextField.swift; sourceTree = "<group>"; };
 		4A012E83C8C89C2E514C0B37 /* Pods-DoYouKnowMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoYouKnowMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoYouKnowMe/Pods-DoYouKnowMe.release.xcconfig"; sourceTree = "<group>"; };
 		4DC09E03EA813507FB28EFBC /* Pods-DoYouKnowMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoYouKnowMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoYouKnowMe/Pods-DoYouKnowMe.debug.xcconfig"; sourceTree = "<group>"; };
 		5A6B005C1FB4EF32009BCE11 /* Lobby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lobby.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			children = (
 				D391308F1F8F5DAC00EF2DFD /* LoginView.swift */,
 				D39130901F8F5DAC00EF2DFD /* LoginView.xib */,
+				2792FDAA1FBCF6F900B1278D /* DesignableUITextField.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2792FDAB1FBCF6F900B1278D /* DesignableUITextField.swift in Sources */,
 				D3F1BF611F974CEE00E7D356 /* JoinGameViewController.swift in Sources */,
 				5A6B00611FB4F086009BCE11 /* GameLobby.swift in Sources */,
 				275BBDD31FB4442F00B91387 /* PlayGameViewController.swift in Sources */,
