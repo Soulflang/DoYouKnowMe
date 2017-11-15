@@ -44,6 +44,10 @@
                         <userDefinedRuntimeAttribute type="color" keyPath="kasseBaggrund">
                             <color key="value" red="0.87058823529999996" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                         </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="image" keyPath="kasseBillede" value="profile"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="hintFarve">
+                            <color key="value" red="0.45098039220000002" green="0.45098039220000002" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d34-eS-88a">
