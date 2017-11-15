@@ -12,12 +12,14 @@ class LoginView: UIViewController {
 
     
     
+    @IBOutlet weak var nameField: UITextField!
     @IBAction func loginButton(_ sender: UIButton) {
         let viewController: UIViewController = JoinGameViewController() as UIViewController
         //self.present(viewController,animated:true, completion: nil)
         self.navigationController?.pushViewController(viewController, animated: true)
         
     }
+    
     
     
    
@@ -30,6 +32,7 @@ class LoginView: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
+      
         
     }
     
