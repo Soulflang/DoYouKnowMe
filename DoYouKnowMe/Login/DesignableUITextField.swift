@@ -30,6 +30,11 @@ class DesignableUITextField: UITextField {
     }
 
     @IBInspectable var leftPadding: CGFloat = 0
+    @IBInspectable var piktogramFarve: UIColor = UIColor.lightGray {
+        didSet {
+            updateView()
+        }
+    }
 
     @IBInspectable var hintFarve: UIColor = UIColor.lightGray {
         didSet {
@@ -55,7 +60,7 @@ class DesignableUITextField: UITextField {
             imageView.image = image
 
             // Note: In order for your image to use the tint color, you have to select the image in the Assets.xcassets and change the "Render As" property to "Template Image".
-            imageView.tintColor = hintFarve
+            imageView.tintColor = piktogramFarve
             leftView = imageView
         } else {
             leftViewMode = UITextFieldViewMode.never
