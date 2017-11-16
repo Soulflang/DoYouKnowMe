@@ -12,7 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginView" customModule="DoYouKnowMe" customModuleProvider="target">
             <connections>
-                <outlet property="nameField" destination="yQt-Jr-7kc" id="9Eb-f4-oOd"/>
+                <outlet property="Field1" destination="2p3-x9-g9N" id="A3R-0C-Qxc"/>
+                <outlet property="Field2" destination="yQt-Jr-7kc" id="4Sc-YX-1VD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

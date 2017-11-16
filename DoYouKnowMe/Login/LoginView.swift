@@ -12,11 +12,34 @@ class LoginView: UIViewController {
 
     
     
-    @IBOutlet weak var nameField: UITextField!
+    
+    @IBOutlet weak var Field1: DesignableUITextField!
+    @IBOutlet weak var Field2: DesignableUITextField!
+    
+    
+    
     @IBAction func loginButton(_ sender: UIButton) {
         let viewController: UIViewController = JoinGameViewController() as UIViewController
         //self.present(viewController,animated:true, completion: nil)
-        self.navigationController?.pushViewController(viewController, animated: true)
+        if Field1.text == "" || Field2.text == "" {
+            let alert = UIAlertController(title: "Name missing",
+                                          message: "You need to enter two names, in order to play",
+                                          preferredStyle: .alert)
+            
+            let saveAction = UIAlertAction(title: "Okay",
+                                           style: .default)
+            alert.addAction(saveAction)
+            present(alert, animated: true)
+
+        }
+        else{
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+        
+        
+        
+        
+        
         
     }
     
