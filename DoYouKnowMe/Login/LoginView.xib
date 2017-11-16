@@ -78,15 +78,6 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </textField>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please enter your name, to play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYR-3F-JjW">
-                            <rect key="frame" x="50" y="0.0" width="275" height="21"/>
-                            <constraints>
-                                <constraint firstAttribute="width" secondItem="oYR-3F-JjW" secondAttribute="height" multiplier="275:21" id="QSB-9R-GRG"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <textField opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name Player 1" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="20" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2p3-x9-g9N" customClass="DesignableUITextField" customModule="DoYouKnowMe" customModuleProvider="target">
                             <rect key="frame" x="20" y="26" width="335" height="44"/>
                             <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -126,11 +117,9 @@
                         <constraint firstItem="EC2-U0-3Ip" firstAttribute="trailing" secondItem="yQt-Jr-7kc" secondAttribute="trailing" constant="20" id="0aL-PU-4hc"/>
                         <constraint firstItem="2p3-x9-g9N" firstAttribute="width" secondItem="2p3-x9-g9N" secondAttribute="height" multiplier="335:44" id="FJ3-lI-z50"/>
                         <constraint firstItem="2p3-x9-g9N" firstAttribute="leading" secondItem="EC2-U0-3Ip" secondAttribute="leading" constant="20" id="Gba-Dd-Bvh"/>
-                        <constraint firstItem="yQt-Jr-7kc" firstAttribute="top" secondItem="oYR-3F-JjW" secondAttribute="bottom" constant="8" id="KQM-gx-DrV"/>
                         <constraint firstAttribute="width" secondItem="8Lj-rR-MMw" secondAttribute="height" multiplier="75:32" constant="-37.5" id="Phr-ah-B0C"/>
                         <constraint firstItem="EC2-U0-3Ip" firstAttribute="trailing" secondItem="d34-eS-88a" secondAttribute="trailing" constant="20" id="Wve-rD-yKO"/>
                         <constraint firstItem="d34-eS-88a" firstAttribute="top" secondItem="yQt-Jr-7kc" secondAttribute="bottom" constant="4" id="hC4-oB-DP1"/>
-                        <constraint firstItem="EC2-U0-3Ip" firstAttribute="trailing" secondItem="oYR-3F-JjW" secondAttribute="trailing" constant="50" id="jMI-K6-nya"/>
                         <constraint firstItem="EC2-U0-3Ip" firstAttribute="bottom" secondItem="d34-eS-88a" secondAttribute="bottom" constant="10" id="lHK-II-RVn"/>
                         <constraint firstItem="yQt-Jr-7kc" firstAttribute="leading" secondItem="EC2-U0-3Ip" secondAttribute="leading" constant="20" id="orK-Na-88L"/>
                         <constraint firstItem="d34-eS-88a" firstAttribute="leading" secondItem="EC2-U0-3Ip" secondAttribute="leading" constant="20" id="uSi-eR-OSY"/>
