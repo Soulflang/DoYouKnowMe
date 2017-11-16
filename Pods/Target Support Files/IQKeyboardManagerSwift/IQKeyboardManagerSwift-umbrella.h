@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double StarscreamVersionNumber;
-FOUNDATION_EXPORT const unsigned char StarscreamVersionString[];
+FOUNDATION_EXPORT double IQKeyboardManagerSwiftVersionNumber;
+FOUNDATION_EXPORT const unsigned char IQKeyboardManagerSwiftVersionString[];
 
