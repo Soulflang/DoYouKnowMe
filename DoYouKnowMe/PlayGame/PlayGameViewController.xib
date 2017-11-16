@@ -88,30 +88,27 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEW-cW-JAK">
-                    <rect key="frame" x="0.0" y="371" width="375" height="296"/>
+                    <rect key="frame" x="0.0" y="372" width="375" height="295"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btU-m7-gPU">
-                            <rect key="frame" x="0.0" y="0.0" width="191" height="140"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btU-m7-gPU">
+                            <rect key="frame" x="0.0" y="0.0" width="186" height="296"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="btU-m7-gPU" secondAttribute="height" multiplier="93:148" id="aKq-nV-WsF"/>
+                            </constraints>
                             <state key="normal" title="Svar 1"/>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfQ-Yo-AeF">
-                            <rect key="frame" x="0.0" y="148" width="191" height="148"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Svar 3"/>
-                        </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGh-QF-8GP">
-                            <rect key="frame" x="185" y="-2" width="190" height="142"/>
+                            <rect key="frame" x="186" y="0.0" width="189" height="295"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Svar 2"/>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VnJ-tX-HZG">
-                            <rect key="frame" x="199" y="148" width="176" height="148"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Svar 4"/>
-                        </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="btU-m7-gPU" firstAttribute="leading" secondItem="eEW-cW-JAK" secondAttribute="leading" id="TOy-3r-fOm"/>
+                        <constraint firstItem="btU-m7-gPU" firstAttribute="top" secondItem="eEW-cW-JAK" secondAttribute="top" id="fQp-eC-i7k"/>
+                    </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZGe-Oc-rzu">
                     <rect key="frame" x="0.0" y="197" width="375" height="145"/>
@@ -128,16 +125,18 @@
                 <constraint firstItem="GGP-SM-RXk" firstAttribute="leading" secondItem="ZGe-Oc-rzu" secondAttribute="leading" id="CQu-DH-frA"/>
                 <constraint firstItem="GGP-SM-RXk" firstAttribute="top" secondItem="ZGe-Oc-rzu" secondAttribute="bottom" id="GhW-BW-kak"/>
                 <constraint firstItem="GGP-SM-RXk" firstAttribute="leading" secondItem="eEW-cW-JAK" secondAttribute="leading" id="Ihc-Yy-9gD"/>
+                <constraint firstItem="eEW-cW-JAK" firstAttribute="top" secondItem="GGP-SM-RXk" secondAttribute="bottom" constant="1" id="Jyi-eh-t4E"/>
                 <constraint firstItem="ZGe-Oc-rzu" firstAttribute="top" secondItem="dVP-ey-1Un" secondAttribute="bottom" id="NEA-vS-XMv"/>
                 <constraint firstItem="vX7-gK-DdW" firstAttribute="trailing" secondItem="qTZ-6y-MiO" secondAttribute="trailing" id="O4B-LT-jLQ"/>
                 <constraint firstItem="vX7-gK-DdW" firstAttribute="leading" secondItem="qTZ-6y-MiO" secondAttribute="leading" id="OSz-PM-LBH"/>
-                <constraint firstItem="eEW-cW-JAK" firstAttribute="top" secondItem="GGP-SM-RXk" secondAttribute="bottom" id="XLv-16-ehx"/>
+                <constraint firstItem="eEW-cW-JAK" firstAttribute="top" secondItem="GGP-SM-RXk" secondAttribute="bottom" constant="1" id="XLv-16-ehx"/>
                 <constraint firstItem="dVP-ey-1Un" firstAttribute="top" secondItem="vX7-gK-DdW" secondAttribute="bottom" id="XRy-XM-6cB"/>
                 <constraint firstItem="vX7-gK-DdW" firstAttribute="top" secondItem="dfa-iG-fJd" secondAttribute="top" id="XoA-Rm-wt9"/>
                 <constraint firstItem="ZGe-Oc-rzu" firstAttribute="trailing" secondItem="qTZ-6y-MiO" secondAttribute="trailing" id="Yww-5h-HJ0"/>
                 <constraint firstItem="GGP-SM-RXk" firstAttribute="trailing" secondItem="eEW-cW-JAK" secondAttribute="trailing" id="a77-J5-rFt"/>
                 <constraint firstItem="GGP-SM-RXk" firstAttribute="trailing" secondItem="qTZ-6y-MiO" secondAttribute="trailing" id="koy-hX-wEq"/>
                 <constraint firstItem="eEW-cW-JAK" firstAttribute="bottom" secondItem="qTZ-6y-MiO" secondAttribute="bottom" id="owx-fa-S1t"/>
+                <constraint firstItem="eEW-cW-JAK" firstAttribute="leading" secondItem="qTZ-6y-MiO" secondAttribute="leading" id="qQJ-3w-369"/>
                 <constraint firstItem="dVP-ey-1Un" firstAttribute="trailing" secondItem="qTZ-6y-MiO" secondAttribute="trailing" id="wGr-Bb-ua9"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="qTZ-6y-MiO"/>
@@ -147,7 +146,7 @@
                 <outlet property="PlayerThreePic" destination="lGe-ma-pSK" id="IEt-bq-uVx"/>
                 <outlet property="PlayerTwoPic" destination="hIS-k9-RqT" id="Tlm-va-zli"/>
             </connections>
-            <point key="canvasLocation" x="15.5" y="28.5"/>
+            <point key="canvasLocation" x="14.5" y="27.5"/>
         </view>
     </objects>
     <resources>
