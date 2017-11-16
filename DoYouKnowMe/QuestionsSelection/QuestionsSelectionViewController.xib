@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuestionsSelectionViewController" customModule="Agree" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="b96-No-hir" id="jxF-gg-Xu3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ApU-fT-On3">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="129.33333333333334"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vælg mindst 5 spørgsmål" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlD-NH-f4U">
+                            <rect key="frame" x="90" y="48" width="195" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ApU-fT-On3" secondAttribute="height" multiplier="125:39" id="ANL-bK-OFM"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b96-No-hir">
+                    <rect key="frame" x="0.0" y="129.33333333333337" width="414" height="535"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ug-WJ-MaA">
+                    <rect key="frame" x="0.0" y="664.33333333333337" width="414" height="71.666666666666629"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="7Ug-WJ-MaA" secondAttribute="height" multiplier="75:13" id="obD-kf-P9W"/>
+                    </constraints>
+                    <state key="normal" title="Start spil!"/>
+                    <connections>
+                        <action selector="startGamePressed:" destination="-1" eventType="touchUpInside" id="Cdl-G2-lEf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7Ug-WJ-MaA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2jk-Ss-xrw"/>
+                <constraint firstItem="ApU-fT-On3" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Ccm-7h-QlO"/>
+                <constraint firstAttribute="trailing" secondItem="b96-No-hir" secondAttribute="trailing" id="P3F-Zf-pdO"/>
+                <constraint firstItem="7Ug-WJ-MaA" firstAttribute="top" secondItem="b96-No-hir" secondAttribute="bottom" id="PDA-VU-qRo"/>
+                <constraint firstItem="7Ug-WJ-MaA" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="RbZ-tD-OTj"/>
+                <constraint firstItem="7Ug-WJ-MaA" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="SSV-Jd-6lv"/>
+                <constraint firstItem="b96-No-hir" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Wql-Ov-s0i"/>
+                <constraint firstItem="ApU-fT-On3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dNJ-NB-MpS"/>
+                <constraint firstItem="ApU-fT-On3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gUy-ro-CIe"/>
+                <constraint firstItem="b96-No-hir" firstAttribute="top" secondItem="ApU-fT-On3" secondAttribute="bottom" id="mGu-5J-Ux3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

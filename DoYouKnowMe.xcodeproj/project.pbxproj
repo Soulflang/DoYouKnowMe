@@ -12,6 +12,11 @@
 		2792FDAB1FBCF6F900B1278D /* DesignableUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2792FDAA1FBCF6F900B1278D /* DesignableUITextField.swift */; };
 		27AF4A611FBDBECC00E30184 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AF4A601FBDBECC00E30184 /* Question.swift */; };
 		4ED56591B7EE01BAC5AC2E5B /* Pods_DoYouKnowMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8616F60F16723095976C3DA3 /* Pods_DoYouKnowMe.framework */; };
+		5ACB05C61FBDC3F700D978F1 /* QuestionsSelectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ACB05C21FBDC3F600D978F1 /* QuestionsSelectionViewCell.xib */; };
+		5ACB05C71FBDC3F700D978F1 /* QuestionsSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACB05C31FBDC3F600D978F1 /* QuestionsSelectionViewController.swift */; };
+		5ACB05C81FBDC3F700D978F1 /* QuestionsSelectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACB05C41FBDC3F700D978F1 /* QuestionsSelectionViewCell.swift */; };
+		5ACB05C91FBDC3F700D978F1 /* QuestionsSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ACB05C51FBDC3F700D978F1 /* QuestionsSelectionViewController.xib */; };
+		5ACB05CC1FBDC42700D978F1 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACB05CB1FBDC42700D978F1 /* GameData.swift */; };
 		D327DFA01FADFC0000AFB2AE /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D327DF9E1FADFC0000AFB2AE /* TableViewController.swift */; };
 		D327DFA11FADFC0000AFB2AE /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D327DF9F1FADFC0000AFB2AE /* TableViewController.xib */; };
 		D327DFA61FAE04B700AFB2AE /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D327DFA41FAE04B700AFB2AE /* CustomTableViewCell.swift */; };
@@ -41,6 +46,11 @@
 		27AF4A601FBDBECC00E30184 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		4A012E83C8C89C2E514C0B37 /* Pods-DoYouKnowMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoYouKnowMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoYouKnowMe/Pods-DoYouKnowMe.release.xcconfig"; sourceTree = "<group>"; };
 		4DC09E03EA813507FB28EFBC /* Pods-DoYouKnowMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoYouKnowMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoYouKnowMe/Pods-DoYouKnowMe.debug.xcconfig"; sourceTree = "<group>"; };
+		5ACB05C21FBDC3F600D978F1 /* QuestionsSelectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionsSelectionViewCell.xib; sourceTree = "<group>"; };
+		5ACB05C31FBDC3F600D978F1 /* QuestionsSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsSelectionViewController.swift; sourceTree = "<group>"; };
+		5ACB05C41FBDC3F700D978F1 /* QuestionsSelectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsSelectionViewCell.swift; sourceTree = "<group>"; };
+		5ACB05C51FBDC3F700D978F1 /* QuestionsSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionsSelectionViewController.xib; sourceTree = "<group>"; };
+		5ACB05CB1FBDC42700D978F1 /* GameData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 		8616F60F16723095976C3DA3 /* Pods_DoYouKnowMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoYouKnowMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D327DF9E1FADFC0000AFB2AE /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		D327DF9F1FADFC0000AFB2AE /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
@@ -103,6 +113,25 @@
 			path = Objects;
 			sourceTree = "<group>";
 		};
+		5ACB05C11FBDC3C100D978F1 /* QuestionsSelection */ = {
+			isa = PBXGroup;
+			children = (
+				5ACB05C41FBDC3F700D978F1 /* QuestionsSelectionViewCell.swift */,
+				5ACB05C21FBDC3F600D978F1 /* QuestionsSelectionViewCell.xib */,
+				5ACB05C31FBDC3F600D978F1 /* QuestionsSelectionViewController.swift */,
+				5ACB05C51FBDC3F700D978F1 /* QuestionsSelectionViewController.xib */,
+			);
+			path = QuestionsSelection;
+			sourceTree = "<group>";
+		};
+		5ACB05CA1FBDC41100D978F1 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5ACB05CB1FBDC42700D978F1 /* GameData.swift */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
 		B1C9C61ADEA8D45AB96FF490 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +184,8 @@
 		D36C64881F8A1CC1008A548F /* DoYouKnowMe */ = {
 			isa = PBXGroup;
 			children = (
+				5ACB05CA1FBDC41100D978F1 /* DataLayer */,
+				5ACB05C11FBDC3C100D978F1 /* QuestionsSelection */,
 				27AF4A5D1FBDBDFF00E30184 /* Objects */,
 				275BBDD11FB4440200B91387 /* PlayGame */,
 				D3306A531FB1DDED0038759C /* Brians_Tests */,
@@ -268,9 +299,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D36C64941F8A1CC1008A548F /* LaunchScreen.storyboard in Resources */,
+				5ACB05C61FBDC3F700D978F1 /* QuestionsSelectionViewCell.xib in Resources */,
 				D327DFA71FAE04B700AFB2AE /* CustomTableViewCell.xib in Resources */,
 				275BBDD51FB4444900B91387 /* PlayGameViewController.xib in Resources */,
 				D327DFA11FADFC0000AFB2AE /* TableViewController.xib in Resources */,
+				5ACB05C91FBDC3F700D978F1 /* QuestionsSelectionViewController.xib in Resources */,
 				D36C64911F8A1CC1008A548F /* Assets.xcassets in Resources */,
 				D39130921F8F5DAC00EF2DFD /* LoginView.xib in Resources */,
 			);
@@ -345,6 +378,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2792FDAB1FBCF6F900B1278D /* DesignableUITextField.swift in Sources */,
+				5ACB05CC1FBDC42700D978F1 /* GameData.swift in Sources */,
+				5ACB05C81FBDC3F700D978F1 /* QuestionsSelectionViewCell.swift in Sources */,
+				5ACB05C71FBDC3F700D978F1 /* QuestionsSelectionViewController.swift in Sources */,
 				27AF4A611FBDBECC00E30184 /* Question.swift in Sources */,
 				275BBDD31FB4442F00B91387 /* PlayGameViewController.swift in Sources */,
 				D36C648A1F8A1CC1008A548F /* AppDelegate.swift in Sources */,

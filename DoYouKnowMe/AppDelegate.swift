@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        
         
         // Change this to get another starting view for test purposes
-        let testView = LoginViewController()
+        let testView = QuestionsSelectionViewController()
         let navigationController = UINavigationController(rootViewController: testView)
         navigationController.navigationBar.isTranslucent = false
         navigationController.navigationBar.barTintColor = UIColor(red:0.80, green:0.49, blue:0.35, alpha:1.0)
