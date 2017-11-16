@@ -11,7 +11,7 @@ import UIKit
 class LoginViewController: UIViewController {
 
     
-    
+  
     
     
     @IBOutlet weak var Field1: UITextField!
@@ -59,6 +59,8 @@ class LoginViewController: UIViewController {
  
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(LoginView.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(LoginView.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         
         // Do any additional setup after loading the view.
     }
