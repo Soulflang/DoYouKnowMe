@@ -29,10 +29,10 @@
                     </constraints>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Lj-rR-MMw">
-                    <rect key="frame" x="0.0" y="530" width="375" height="137"/>
+                    <rect key="frame" x="0.0" y="491" width="375" height="176"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d34-eS-88a">
-                            <rect key="frame" x="20" y="85" width="335" height="44"/>
+                            <rect key="frame" x="20" y="122" width="335" height="44"/>
                             <color key="backgroundColor" red="0.87058823529999996" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="d34-eS-88a" secondAttribute="height" multiplier="335:44" id="EVb-Gq-PnG"/>
@@ -45,8 +45,8 @@
                                 <action selector="loginButton:" destination="-1" eventType="touchUpInside" id="XH3-B7-jMM"/>
                             </connections>
                         </button>
-                        <textField opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Name" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="20" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="yQt-Jr-7kc" customClass="DesignableUITextField" customModule="DoYouKnowMe" customModuleProvider="target">
-                            <rect key="frame" x="20" y="35" width="335" height="44"/>
+                        <textField opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name Player 2" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="20" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="yQt-Jr-7kc" customClass="DesignableUITextField" customModule="DoYouKnowMe" customModuleProvider="target">
+                            <rect key="frame" x="20" y="74" width="335" height="44"/>
                             <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="yQt-Jr-7kc" secondAttribute="height" multiplier="335:44" id="8Dv-bL-VeF"/>
@@ -77,8 +77,8 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </textField>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your name, to play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYR-3F-JjW">
-                            <rect key="frame" x="50" y="6" width="275" height="21"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please enter your name, to play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYR-3F-JjW">
+                            <rect key="frame" x="50" y="0.0" width="275" height="21"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="oYR-3F-JjW" secondAttribute="height" multiplier="275:21" id="QSB-9R-GRG"/>
                             </constraints>
@@ -86,19 +86,55 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <textField opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name Player 1" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="20" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2p3-x9-g9N" customClass="DesignableUITextField" customModule="DoYouKnowMe" customModuleProvider="target">
+                            <rect key="frame" x="20" y="26" width="335" height="44"/>
+                            <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="2p3-x9-g9N" secondAttribute="height" multiplier="335:44" id="2pl-un-Iri"/>
+                                <constraint firstAttribute="width" secondItem="2p3-x9-g9N" secondAttribute="height" multiplier="335:44" id="NRo-AL-aWj"/>
+                            </constraints>
+                            <color key="textColor" red="0.59999999999999998" green="0.60392156860000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" textContentType="name"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                    <color key="value" red="0.59999999999999998" green="0.60392156860000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="profile"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                    <color key="value" red="0.45098039220000002" green="0.45098039220000002" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="kasseBaggrund">
+                                    <color key="value" red="0.87058823529999996" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="image" keyPath="kasseBillede" value="profile"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="hintFarve">
+                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="piktogramFarve">
+                                    <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
                     </subviews>
                     <color key="backgroundColor" red="0.59999999999999998" green="0.60392156860000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="EC2-U0-3Ip" firstAttribute="trailing" secondItem="yQt-Jr-7kc" secondAttribute="trailing" constant="20" id="0aL-PU-4hc"/>
-                        <constraint firstItem="oYR-3F-JjW" firstAttribute="leading" secondItem="EC2-U0-3Ip" secondAttribute="leading" constant="50" id="FY8-yw-XUe"/>
+                        <constraint firstItem="2p3-x9-g9N" firstAttribute="width" secondItem="2p3-x9-g9N" secondAttribute="height" multiplier="335:44" id="FJ3-lI-z50"/>
+                        <constraint firstItem="2p3-x9-g9N" firstAttribute="leading" secondItem="EC2-U0-3Ip" secondAttribute="leading" constant="20" id="Gba-Dd-Bvh"/>
                         <constraint firstItem="yQt-Jr-7kc" firstAttribute="top" secondItem="oYR-3F-JjW" secondAttribute="bottom" constant="8" id="KQM-gx-DrV"/>
-                        <constraint firstAttribute="width" secondItem="8Lj-rR-MMw" secondAttribute="height" multiplier="75:32" constant="53.90625" id="Phr-ah-B0C"/>
+                        <constraint firstAttribute="width" secondItem="8Lj-rR-MMw" secondAttribute="height" multiplier="75:32" constant="-37.5" id="Phr-ah-B0C"/>
                         <constraint firstItem="EC2-U0-3Ip" firstAttribute="trailing" secondItem="d34-eS-88a" secondAttribute="trailing" constant="20" id="Wve-rD-yKO"/>
-                        <constraint firstItem="d34-eS-88a" firstAttribute="top" secondItem="yQt-Jr-7kc" secondAttribute="bottom" constant="6" id="hC4-oB-DP1"/>
+                        <constraint firstItem="d34-eS-88a" firstAttribute="top" secondItem="yQt-Jr-7kc" secondAttribute="bottom" constant="4" id="hC4-oB-DP1"/>
                         <constraint firstItem="EC2-U0-3Ip" firstAttribute="trailing" secondItem="oYR-3F-JjW" secondAttribute="trailing" constant="50" id="jMI-K6-nya"/>
-                        <constraint firstItem="EC2-U0-3Ip" firstAttribute="bottom" secondItem="d34-eS-88a" secondAttribute="bottom" constant="8" id="lHK-II-RVn"/>
+                        <constraint firstItem="EC2-U0-3Ip" firstAttribute="bottom" secondItem="d34-eS-88a" secondAttribute="bottom" constant="10" id="lHK-II-RVn"/>
                         <constraint firstItem="yQt-Jr-7kc" firstAttribute="leading" secondItem="EC2-U0-3Ip" secondAttribute="leading" constant="20" id="orK-Na-88L"/>
                         <constraint firstItem="d34-eS-88a" firstAttribute="leading" secondItem="EC2-U0-3Ip" secondAttribute="leading" constant="20" id="uSi-eR-OSY"/>
+                        <constraint firstItem="yQt-Jr-7kc" firstAttribute="top" secondItem="2p3-x9-g9N" secondAttribute="bottom" constant="4" id="y8e-Dh-RUz"/>
+                        <constraint firstItem="EC2-U0-3Ip" firstAttribute="trailing" secondItem="2p3-x9-g9N" secondAttribute="trailing" constant="20" id="zxM-yW-M9x"/>
                     </constraints>
                     <viewLayoutGuide key="safeArea" id="EC2-U0-3Ip"/>
                 </view>
