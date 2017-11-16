@@ -14,6 +14,7 @@
             <connections>
                 <outlet property="Field1" destination="2p3-x9-g9N" id="H8W-wJ-ooh"/>
                 <outlet property="Field2" destination="yQt-Jr-7kc" id="Laq-p6-DUC"/>
+                <outlet property="Field3" destination="8Lj-rR-MMw" id="Hxj-3O-xcC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
