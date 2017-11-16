@@ -45,14 +45,14 @@
 		4471C58F59FBC565A54012436CF46339 /* Pods-DoYouKnowMe.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DoYouKnowMe.modulemap"; sourceTree = "<group>"; };
 		5B220DE9811768A33367A37972807704 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5B66190C3FC06D364DD89688042F8F42 /* Pods-DoYouKnowMe-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DoYouKnowMe-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7E4616E31CD0BD9FB6FE644DF48ADD92 /* SocketIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocketIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E4616E31CD0BD9FB6FE644DF48ADD92 /* SocketIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SocketIO.framework; path = "/Users/admin/Documents/DoYouKnowMe/Pods/../build/Debug-iphoneos/SocketIO.framework"; sourceTree = "<absolute>"; };
 		913A9BD44C35CEDF9EDE69044BAB4A33 /* Pods-DoYouKnowMe-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DoYouKnowMe-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AC785D85DED92CE38C392E42ECBE315C /* Pods-DoYouKnowMe-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DoYouKnowMe-acknowledgements.plist"; sourceTree = "<group>"; };
 		CB051A6BAC50A38285B720337816B11F /* Pods-DoYouKnowMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DoYouKnowMe.release.xcconfig"; sourceTree = "<group>"; };
 		CDCE6C5C4BF4E1E4767B8CB1EE55514B /* Pods-DoYouKnowMe-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DoYouKnowMe-resources.sh"; sourceTree = "<group>"; };
-		DC6E52AC85D3BC1529BECBE003F150A7 /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB35C183F821F4E61B8AE19571AF23A6 /* Pods_DoYouKnowMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoYouKnowMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC6E52AC85D3BC1529BECBE003F150A7 /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Starscream.framework; path = "/Users/admin/Documents/DoYouKnowMe/Pods/../build/Debug-iphoneos/Starscream.framework"; sourceTree = "<absolute>"; };
+		EB35C183F821F4E61B8AE19571AF23A6 /* Pods_DoYouKnowMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DoYouKnowMe.framework; path = "/Users/admin/Documents/DoYouKnowMe/Pods/../build/Debug-iphoneos/Pods_DoYouKnowMe.framework"; sourceTree = "<absolute>"; };
 		FA5D7FA2C5151D996EF84FFC9BC6B71A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,19 +98,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				C6C6CF85326A60B112CC4A77BAD281D7 /* Frameworks */,
 				8ADA2618CA5A52EA44B48CE6AC2139BC /* Pods */,
-				87A1FDE1A56C55D814603D1702618E78 /* Products */,
 				E4D19B63F0065C21BBFB2DE08D7376CF /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		87A1FDE1A56C55D814603D1702618E78 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EB35C183F821F4E61B8AE19571AF23A6 /* Pods_DoYouKnowMe.framework */,
-				7E4616E31CD0BD9FB6FE644DF48ADD92 /* SocketIO.framework */,
-				DC6E52AC85D3BC1529BECBE003F150A7 /* Starscream.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		8ADA2618CA5A52EA44B48CE6AC2139BC /* Pods */ = {
@@ -253,7 +242,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 87A1FDE1A56C55D814603D1702618E78 /* Products */;
+			productRefGroup = 7DB346D0F39D3F0E887471402A8071AB;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
