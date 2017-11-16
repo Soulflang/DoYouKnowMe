@@ -15,7 +15,7 @@ class LoginView: UIViewController {
     
     @IBOutlet weak var Field1: DesignableUITextField!
     @IBOutlet weak var Field2: DesignableUITextField!
-    
+    var names:[String] = []
     
     
     @IBAction func loginButton(_ sender: UIButton) {
@@ -32,7 +32,21 @@ class LoginView: UIViewController {
             present(alert, animated: true)
 
         }
+        else if Field1.text == Field2.text{
+            let alert = UIAlertController(title: "Names identical",
+                                          message: "Names must not be identical, please enter two different names",
+                                          preferredStyle: .alert)
+            
+            let saveAction = UIAlertAction(title: "Okay",
+                                           style: .default)
+            alert.addAction(saveAction)
+            present(alert, animated: true)
+        }
         else{
+            let name1 = Field1.text!
+            let name2 = Field2.text!
+            self.names.append(name1)
+            self.names.append(name2)
             self.navigationController?.pushViewController(viewController, animated: true)
         }
         
