@@ -16,10 +16,14 @@ class PlayGameViewController: UIViewController {
     private var startingPlayerIndex: Int = 99
     
     
-
+    @IBOutlet weak var Answer1: UIButton!
+    @IBOutlet weak var Answer2: UIButton!
+    
     
     override func viewWillAppear(_ animated: Bool) {
         
+        Answer1.setTitle(names[0], for: .normal)
+        Answer2.setTitle(names[1], for: .normal)
         
     }
     override func viewDidLoad() {
@@ -37,7 +41,18 @@ class PlayGameViewController: UIViewController {
         let diceRoll = Int(arc4random_uniform(1))
         let playerName = names[diceRoll]
         self.startingPlayerIndex = diceRoll
+        let alert = UIAlertController(title: "Starting player found",
+                                      message: "Starting player is " + playerName,
+                                      preferredStyle: .alert)
+        
+        let saveAction = UIAlertAction(title: "Okay",
+                                       style: .default)
+        alert.addAction(saveAction)
+        present(alert, animated: true)
         return playerName
+    }
+    func endState(){
+        
     }
     
     

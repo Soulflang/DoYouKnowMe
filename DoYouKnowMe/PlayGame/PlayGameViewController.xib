@@ -83,6 +83,10 @@
                 <constraint firstItem="ZGe-Oc-rzu" firstAttribute="leading" secondItem="qTZ-6y-MiO" secondAttribute="leading" id="z5y-5b-kEe"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="qTZ-6y-MiO"/>
+            <connections>
+                <outlet property="Answer1" destination="hHS-6P-DhP" id="2ju-HB-U2M"/>
+                <outlet property="Answer2" destination="jjL-s9-9V1" id="bqj-v7-3NS"/>
+            </connections>
             <point key="canvasLocation" x="14" y="27"/>
         </view>
     </objects>
