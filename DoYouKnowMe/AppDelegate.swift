@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,16 +17,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let login = LoginView()
+       
         
         // Change this to get another starting view for test purposes
-        let testView = LoginView()
+        let testView = LoginViewController()
         let navigationController = UINavigationController(rootViewController: testView)
         navigationController.navigationBar.isTranslucent = false
         navigationController.navigationBar.barTintColor = UIColor(red:0.80, green:0.49, blue:0.35, alpha:1.0)
         navigationController.navigationBar.tintColor = UIColor.white
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
+        IQKeyboardManager.sharedManager().enable = true
         // Override point for customization after application launch.
         return true
     }

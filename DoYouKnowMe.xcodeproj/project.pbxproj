@@ -10,6 +10,7 @@
 		275BBDD31FB4442F00B91387 /* PlayGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275BBDD21FB4442F00B91387 /* PlayGameViewController.swift */; };
 		275BBDD51FB4444900B91387 /* PlayGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 275BBDD41FB4444900B91387 /* PlayGameViewController.xib */; };
 		2792FDAB1FBCF6F900B1278D /* DesignableUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2792FDAA1FBCF6F900B1278D /* DesignableUITextField.swift */; };
+		4ED56591B7EE01BAC5AC2E5B /* Pods_DoYouKnowMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8616F60F16723095976C3DA3 /* Pods_DoYouKnowMe.framework */; };
 		D327DFA01FADFC0000AFB2AE /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D327DF9E1FADFC0000AFB2AE /* TableViewController.swift */; };
 		D327DFA11FADFC0000AFB2AE /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D327DF9F1FADFC0000AFB2AE /* TableViewController.xib */; };
 		D327DFA61FAE04B700AFB2AE /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D327DFA41FAE04B700AFB2AE /* CustomTableViewCell.swift */; };
@@ -60,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ED56591B7EE01BAC5AC2E5B /* Pods_DoYouKnowMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,13 +282,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DoYouKnowMe/Pods-DoYouKnowMe-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
-				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
