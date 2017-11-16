@@ -19,8 +19,8 @@ class LoginView: UIViewController {
     
     
     @IBAction func loginButton(_ sender: UIButton) {
-        let viewController: UIViewController = JoinGameViewController() as UIViewController
-        //self.present(viewController,animated:true, completion: nil)
+       
+        
         if Field1.text == "" || Field2.text == "" {
             let alert = UIAlertController(title: "Name missing",
                                           message: "You need to enter two names, in order to play",
@@ -47,7 +47,7 @@ class LoginView: UIViewController {
             let name2 = Field2.text!
             self.names.append(name1)
             self.names.append(name2)
-            self.navigationController?.pushViewController(viewController, animated: true)
+            //self.navigationController?.pushViewController(viewController, animated: true)
         }
         
         
