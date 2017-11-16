@@ -18,7 +18,7 @@
 		D36C64911F8A1CC1008A548F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D36C64901F8A1CC1008A548F /* Assets.xcassets */; };
 		D36C64941F8A1CC1008A548F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D36C64921F8A1CC1008A548F /* LaunchScreen.storyboard */; };
 		D36C649F1F8A1CC1008A548F /* DoYouKnowMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36C649E1F8A1CC1008A548F /* DoYouKnowMeTests.swift */; };
-		D39130911F8F5DAC00EF2DFD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D391308F1F8F5DAC00EF2DFD /* LoginView.swift */; };
+		D39130911F8F5DAC00EF2DFD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D391308F1F8F5DAC00EF2DFD /* LoginViewController.swift */; };
 		D39130921F8F5DAC00EF2DFD /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D39130901F8F5DAC00EF2DFD /* LoginView.xib */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +51,7 @@
 		D36C649A1F8A1CC1008A548F /* DoYouKnowMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoYouKnowMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D36C649E1F8A1CC1008A548F /* DoYouKnowMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYouKnowMeTests.swift; sourceTree = "<group>"; };
 		D36C64A01F8A1CC1008A548F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D391308F1F8F5DAC00EF2DFD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D391308F1F8F5DAC00EF2DFD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D39130901F8F5DAC00EF2DFD /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,7 +102,7 @@
 		D3306A501FB1D5F50038759C /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				D391308F1F8F5DAC00EF2DFD /* LoginView.swift */,
+				D391308F1F8F5DAC00EF2DFD /* LoginViewController.swift */,
 				D39130901F8F5DAC00EF2DFD /* LoginView.xib */,
 				2792FDAA1FBCF6F900B1278D /* DesignableUITextField.swift */,
 			);
@@ -338,7 +338,7 @@
 				D36C648A1F8A1CC1008A548F /* AppDelegate.swift in Sources */,
 				D327DFA61FAE04B700AFB2AE /* CustomTableViewCell.swift in Sources */,
 				D327DFA01FADFC0000AFB2AE /* TableViewController.swift in Sources */,
-				D39130911F8F5DAC00EF2DFD /* LoginView.swift in Sources */,
+				D39130911F8F5DAC00EF2DFD /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
