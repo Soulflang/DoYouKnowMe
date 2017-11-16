@@ -13,8 +13,11 @@ class LoginView: UIViewController {
     
     
     
-    @IBOutlet weak var Field1: DesignableUITextField!
-    @IBOutlet weak var Field2: DesignableUITextField!
+    
+    @IBOutlet weak var Field1: UITextField!
+    @IBOutlet weak var Field2: UITextField!
+    
+    
     var names:[String] = []
     
     
