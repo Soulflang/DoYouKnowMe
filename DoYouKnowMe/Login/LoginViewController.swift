@@ -50,7 +50,8 @@ class LoginViewController: UIViewController {
             let name2 = Field2.text!
             self.names.append(name1)
             self.names.append(name2)
-            //self.navigationController?.pushViewController(viewController, animated: true)
+            
+            //self.navigationController?.pushViewController(QuestionsSelectionViewController, animated: true)
         }
         
         
