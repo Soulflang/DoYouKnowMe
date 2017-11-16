@@ -14,6 +14,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AF570BC8B7C7646A6F3FFD0DD93C5CE8"
+               BuildableName = "Pods_DoYouKnowMe.framework"
+               BlueprintName = "Pods-DoYouKnowMe"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "D36C64851F8A1CC1008A548F"
                BuildableName = "DoYouKnowMe.app"
                BlueprintName = "DoYouKnowMe"
