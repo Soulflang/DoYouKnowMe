@@ -58,7 +58,6 @@
                     <constraint firstItem="Sf4-aJ-cfD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Cmt-lL-OpU"/>
                     <constraint firstAttribute="bottom" secondItem="Sf4-aJ-cfD" secondAttribute="bottom" constant="5" id="ejg-8m-cT4"/>
                     <constraint firstItem="Sf4-aJ-cfD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="i8W-2L-iGZ"/>
-                    <constraint firstItem="Sf4-aJ-cfD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="jSU-y9-UTI"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
