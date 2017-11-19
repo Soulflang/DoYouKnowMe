@@ -29,7 +29,7 @@ class PlayGameViewController: UIViewController {
         else{
             Game.sharedInstance.allQuestions[currentQuestion].p2Answer = names[0]
         }
-        //resolveNextTurn()
+        resolveNextTurn()
         
     }
     @IBAction func AnswerBtn2(_ sender: UIButton) {
@@ -39,7 +39,7 @@ class PlayGameViewController: UIViewController {
         else{
             Game.sharedInstance.allQuestions[currentQuestion].p2Answer = names[1]
         }
-        //resolveNextTurn()
+        resolveNextTurn()
     }
     
     
@@ -100,8 +100,7 @@ class PlayGameViewController: UIViewController {
         
     }
     func resolveNextTurn(){
-        
-        while currentQuestion != noOfQuestions {
+        print("Resolve kaldt")
             if checkQuestionAnswered(questionToCheck: currentQuestion) == true{
                 currentQuestion = currentQuestion + 1
             }
@@ -109,10 +108,14 @@ class PlayGameViewController: UIViewController {
                 currentPlayerIndex = 0
             }
             else if(currentPlayerIndex == 0){
-                currentQuestion = 1
+                currentPlayerIndex = 1
             }
-            updateView(currentQuestion: Game.sharedInstance.allQuestions[currentQuestion].text, currentPlayer: names[currentPlayerIndex])
-        }
+            DispatchQueue.main.async{
+                print("Vi har nu fat i main tråden")
+               self.updateView(currentQuestion: Game.sharedInstance.allQuestions[self.currentQuestion].text, currentPlayer: self.names[self.currentPlayerIndex])
+            }
+            
+        
         }
             
         
