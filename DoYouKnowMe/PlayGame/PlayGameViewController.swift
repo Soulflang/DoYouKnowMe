@@ -16,14 +16,16 @@ class PlayGameViewController: UIViewController {
     private var startingPlayerIndex: Int = 99
     
     
+    @IBOutlet var Gameview: UIView!
     @IBOutlet weak var Answer1: UIButton!
     @IBOutlet weak var Answer2: UIButton!
     
     
+    
     override func viewWillAppear(_ animated: Bool) {
         
-        Answer1.setTitle(names[0], for: .normal)
-        Answer2.setTitle(names[1], for: .normal)
+       // Answer1.setTitle(names[0], for: .normal)
+       // Answer2.setTitle(names[1], for: .normal)
         
     }
     override func viewDidLoad() {
