@@ -22,6 +22,25 @@ class PlayGameViewController: UIViewController {
     @IBOutlet weak var Answer2: UIButton!
     @IBOutlet weak var turnLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
+    @IBAction func AnswerBtn1(_ sender: UIButton) {
+        if(currentPlayerIndex==0){
+            Game.sharedInstance.allQuestions[currentQuestion].p1Answer = names[0]
+        }
+        else{
+            Game.sharedInstance.allQuestions[currentQuestion].p2Answer = names[0]
+        }
+        //resolveNextTurn()
+        
+    }
+    @IBAction func AnswerBtn2(_ sender: UIButton) {
+        if(currentPlayerIndex==0){
+            Game.sharedInstance.allQuestions[currentQuestion].p1Answer = names[1]
+        }
+        else{
+            Game.sharedInstance.allQuestions[currentQuestion].p2Answer = names[1]
+        }
+        //resolveNextTurn()
+    }
     
     
     
@@ -34,7 +53,7 @@ class PlayGameViewController: UIViewController {
         Answer2.setTitle(names[1], for: .normal)
         noOfQuestions = Game.sharedInstance.allQuestions.count
         print("No of questions selected \(noOfQuestions)")
-        findStartingPlayer()
+        print(findStartingPlayer())
         updateView(currentQuestion: Game.sharedInstance.allQuestions[currentQuestion].text, currentPlayer: names[currentPlayerIndex])
         
        

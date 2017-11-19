@@ -70,6 +70,9 @@
                             <state key="normal" title="Button">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="AnswerBtn1:" destination="-1" eventType="touchUpInside" id="gwD-Yp-0NL"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjL-s9-9V1">
                             <rect key="frame" x="160" y="0.0" width="160" height="295"/>
@@ -77,6 +80,9 @@
                             <state key="normal" title="Button">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="AnswerBtn2:" destination="-1" eventType="touchUpInside" id="rTF-MG-dAn"/>
+                            </connections>
                         </button>
                     </subviews>
                     <constraints>

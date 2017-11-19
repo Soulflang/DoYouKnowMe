@@ -18,7 +18,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var Field2: UITextField!
     
     
-    var names:[String] = []
+    
     
     
     @IBAction func loginButton(_ sender: UIButton) {
@@ -48,9 +48,8 @@ class LoginViewController: UIViewController {
         else{
             let name1 = Field1.text!
             let name2 = Field2.text!
-            self.names.append(name1)
-            self.names.append(name2)
-            
+            Game.sharedInstance.player1Name.append(name1)
+            Game.sharedInstance.player2Name.append(name2)
             //self.navigationController?.pushViewController(QuestionsSelectionViewController, animated: true)
         }
         
