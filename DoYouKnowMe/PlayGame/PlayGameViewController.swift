@@ -104,8 +104,14 @@ class PlayGameViewController: UIViewController {
         while currentQuestion != noOfQuestions {
             if checkQuestionAnswered(questionToCheck: currentQuestion) == true{
                 currentQuestion = currentQuestion + 1
-                updateView(currentQuestion: Game.sharedInstance.allQuestions[currentQuestion].text, currentPlayer: names[currentPlayerIndex])
             }
+            if(currentPlayerIndex == 1){
+                currentPlayerIndex = 0
+            }
+            else if(currentPlayerIndex == 0){
+                currentQuestion = 1
+            }
+            updateView(currentQuestion: Game.sharedInstance.allQuestions[currentQuestion].text, currentPlayer: names[currentPlayerIndex])
         }
         }
             
