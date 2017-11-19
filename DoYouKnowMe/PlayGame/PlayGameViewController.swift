@@ -19,6 +19,8 @@ class PlayGameViewController: UIViewController {
     @IBOutlet var Gameview: UIView!
     @IBOutlet weak var Answer1: UIButton!
     @IBOutlet weak var Answer2: UIButton!
+    @IBOutlet weak var turnLabel: UILabel!
+    @IBOutlet weak var questionLabel: UILabel!
     
     
     
@@ -53,7 +55,9 @@ class PlayGameViewController: UIViewController {
         present(alert, animated: true)
         return playerName
     }
-    func endState(){
+    func updateView(currentQuestion: String, currentPlayer: String){
+        self.turnLabel.text = "Player turn: " + currentPlayer
+        self.questionLabel.text = currentQuestion
         
     }
     

@@ -14,6 +14,8 @@
             <connections>
                 <outlet property="Answer1" destination="hHS-6P-DhP" id="DPO-q1-eZr"/>
                 <outlet property="Answer2" destination="jjL-s9-9V1" id="wHt-x3-7n4"/>
+                <outlet property="questionLabel" destination="saW-79-qSK" id="sNa-kH-ttF"/>
+                <outlet property="turnLabel" destination="22b-am-w37" id="UgO-XP-yDE"/>
                 <outlet property="view" destination="dfa-iG-fJd" id="uvg-lv-zga"/>
             </connections>
         </placeholder>
@@ -44,8 +46,8 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZGe-Oc-rzu">
                     <rect key="frame" x="0.0" y="128" width="320" height="145"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="saW-79-qSK">
-                            <rect key="frame" x="0.0" y="62.5" width="320" height="20.5"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="saW-79-qSK">
+                            <rect key="frame" x="10" y="62.5" width="300" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -54,8 +56,8 @@
                     <color key="backgroundColor" red="0.87058823529999996" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="ZGe-Oc-rzu" secondAttribute="height" multiplier="64:29" id="6zJ-b0-AyF"/>
-                        <constraint firstItem="saW-79-qSK" firstAttribute="leading" secondItem="ZGe-Oc-rzu" secondAttribute="leading" id="Jf4-vZ-M7b"/>
-                        <constraint firstAttribute="trailing" secondItem="saW-79-qSK" secondAttribute="trailing" id="Pz9-8W-lAV"/>
+                        <constraint firstItem="saW-79-qSK" firstAttribute="leading" secondItem="ZGe-Oc-rzu" secondAttribute="leading" constant="10" id="Jf4-vZ-M7b"/>
+                        <constraint firstAttribute="trailing" secondItem="saW-79-qSK" secondAttribute="trailing" constant="10" id="Pz9-8W-lAV"/>
                         <constraint firstItem="saW-79-qSK" firstAttribute="centerY" secondItem="ZGe-Oc-rzu" secondAttribute="centerY" id="gVB-az-hSs"/>
                     </constraints>
                 </view>
