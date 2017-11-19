@@ -34,7 +34,14 @@ class Game {
     }
     
  
-    
+    func gamesSelected() {
+        for question in allQuestions {
+            if question.selected {
+                selectedQuestions.append(question)
+                print(question.text)
+            }
+        }
+    }
     
     func initQuestions(){
         allQuestions.append(Question("Hvem skider mest lang?"))

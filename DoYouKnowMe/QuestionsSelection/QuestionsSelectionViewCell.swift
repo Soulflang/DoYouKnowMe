@@ -12,7 +12,17 @@ class QuestionsSelectionViewCell: UITableViewCell {
 
 
     @IBOutlet weak var txtText: UILabel!
-    var index: Int = -1
+    @IBOutlet weak var cbSelected: CheckBox!
+    
+    var delegate: UIViewController?
+    var index: Int?{
+        willSet {
+           cbSelected.isChecked = Game.sharedInstance.allQuestions[newValue!].selected
+        }
+        
+    }
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,9 +30,12 @@ class QuestionsSelectionViewCell: UITableViewCell {
         
     }
     
-    @IBAction func switchPressed(_ sender: UISwitch) {
-        Game.sharedInstance.allQuestions[index].selected = sender.isOn
+
+    @IBAction func checkBoxPressed(_ sender: CheckBox) {
+        print(sender.isChecked)
+        Game.sharedInstance.allQuestions[index!].selected =  sender.isChecked
     }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

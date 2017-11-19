@@ -43,6 +43,9 @@
                                     <userDefinedRuntimeAttribute type="image" keyPath="unCheckedImg" value="unchecked"/>
                                     <userDefinedRuntimeAttribute type="image" keyPath="CheckedImg" value="checked"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="checkBoxPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="KZc-Ap-t09"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
@@ -62,6 +65,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="cbSelected" destination="5ez-v4-Pm3" id="TCj-fr-ouu"/>
                 <outlet property="txtText" destination="REH-2y-9PP" id="v2f-Tg-hiO"/>
             </connections>
             <point key="canvasLocation" x="19" y="54"/>

@@ -11,6 +11,7 @@ import UIKit
 class QuestionsSelectionViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,7 +21,7 @@ class QuestionsSelectionViewController: UIViewController, UITableViewDataSource 
     }
 
     @IBAction func startGamePressed(_ sender: Any) {
-        
+        self.navigationController?.pushViewController(PlayGameViewController(), animated: true)
         
     }
     override func didReceiveMemoryWarning() {
@@ -41,6 +42,7 @@ class QuestionsSelectionViewController: UIViewController, UITableViewDataSource 
 
         cell.txtText.text = Game.sharedInstance.allQuestions[indexPath.row].text
         cell.index = indexPath.row
+        cell.delegate = self
         return cell
         
     }
