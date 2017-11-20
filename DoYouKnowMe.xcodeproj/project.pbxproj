@@ -11,7 +11,13 @@
 		275BBDD51FB4444900B91387 /* PlayGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 275BBDD41FB4444900B91387 /* PlayGameViewController.xib */; };
 		2792FDAB1FBCF6F900B1278D /* DesignableUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2792FDAA1FBCF6F900B1278D /* DesignableUITextField.swift */; };
 		27AF4A611FBDBECC00E30184 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AF4A601FBDBECC00E30184 /* Question.swift */; };
+		27CE25041FC0534400CC7B7E /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CE25031FC0534400CC7B7E /* CheckBox.swift */; };
 		4ED56591B7EE01BAC5AC2E5B /* Pods_DoYouKnowMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8616F60F16723095976C3DA3 /* Pods_DoYouKnowMe.framework */; };
+		5ACB05C61FBDC3F700D978F1 /* QuestionsSelectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ACB05C21FBDC3F600D978F1 /* QuestionsSelectionViewCell.xib */; };
+		5ACB05C71FBDC3F700D978F1 /* QuestionsSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACB05C31FBDC3F600D978F1 /* QuestionsSelectionViewController.swift */; };
+		5ACB05C81FBDC3F700D978F1 /* QuestionsSelectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACB05C41FBDC3F700D978F1 /* QuestionsSelectionViewCell.swift */; };
+		5ACB05C91FBDC3F700D978F1 /* QuestionsSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ACB05C51FBDC3F700D978F1 /* QuestionsSelectionViewController.xib */; };
+		5ACB05CC1FBDC42700D978F1 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACB05CB1FBDC42700D978F1 /* GameData.swift */; };
 		D327DFA01FADFC0000AFB2AE /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D327DF9E1FADFC0000AFB2AE /* TableViewController.swift */; };
 		D327DFA11FADFC0000AFB2AE /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D327DF9F1FADFC0000AFB2AE /* TableViewController.xib */; };
 		D327DFA61FAE04B700AFB2AE /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D327DFA41FAE04B700AFB2AE /* CustomTableViewCell.swift */; };
@@ -19,28 +25,23 @@
 		D36C648A1F8A1CC1008A548F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36C64891F8A1CC1008A548F /* AppDelegate.swift */; };
 		D36C64911F8A1CC1008A548F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D36C64901F8A1CC1008A548F /* Assets.xcassets */; };
 		D36C64941F8A1CC1008A548F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D36C64921F8A1CC1008A548F /* LaunchScreen.storyboard */; };
-		D36C649F1F8A1CC1008A548F /* DoYouKnowMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36C649E1F8A1CC1008A548F /* DoYouKnowMeTests.swift */; };
 		D39130911F8F5DAC00EF2DFD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D391308F1F8F5DAC00EF2DFD /* LoginViewController.swift */; };
 		D39130921F8F5DAC00EF2DFD /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D39130901F8F5DAC00EF2DFD /* LoginView.xib */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D36C649B1F8A1CC1008A548F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D36C647E1F8A1CC1008A548F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D36C64851F8A1CC1008A548F;
-			remoteInfo = DoYouKnowMe;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		275BBDD21FB4442F00B91387 /* PlayGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayGameViewController.swift; sourceTree = "<group>"; };
 		275BBDD41FB4444900B91387 /* PlayGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayGameViewController.xib; sourceTree = "<group>"; };
 		2792FDAA1FBCF6F900B1278D /* DesignableUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUITextField.swift; sourceTree = "<group>"; };
 		27AF4A601FBDBECC00E30184 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		27CE25031FC0534400CC7B7E /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		4A012E83C8C89C2E514C0B37 /* Pods-DoYouKnowMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoYouKnowMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoYouKnowMe/Pods-DoYouKnowMe.release.xcconfig"; sourceTree = "<group>"; };
 		4DC09E03EA813507FB28EFBC /* Pods-DoYouKnowMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoYouKnowMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoYouKnowMe/Pods-DoYouKnowMe.debug.xcconfig"; sourceTree = "<group>"; };
+		5ACB05C21FBDC3F600D978F1 /* QuestionsSelectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionsSelectionViewCell.xib; sourceTree = "<group>"; };
+		5ACB05C31FBDC3F600D978F1 /* QuestionsSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsSelectionViewController.swift; sourceTree = "<group>"; };
+		5ACB05C41FBDC3F700D978F1 /* QuestionsSelectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsSelectionViewCell.swift; sourceTree = "<group>"; };
+		5ACB05C51FBDC3F700D978F1 /* QuestionsSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionsSelectionViewController.xib; sourceTree = "<group>"; };
+		5ACB05CB1FBDC42700D978F1 /* GameData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 		8616F60F16723095976C3DA3 /* Pods_DoYouKnowMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoYouKnowMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D327DF9E1FADFC0000AFB2AE /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		D327DF9F1FADFC0000AFB2AE /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
@@ -51,7 +52,6 @@
 		D36C64901F8A1CC1008A548F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D36C64931F8A1CC1008A548F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D36C64951F8A1CC1008A548F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D36C649A1F8A1CC1008A548F /* DoYouKnowMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoYouKnowMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D36C649E1F8A1CC1008A548F /* DoYouKnowMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoYouKnowMeTests.swift; sourceTree = "<group>"; };
 		D36C64A01F8A1CC1008A548F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D391308F1F8F5DAC00EF2DFD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -64,13 +64,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4ED56591B7EE01BAC5AC2E5B /* Pods_DoYouKnowMe.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D36C64971F8A1CC1008A548F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +94,26 @@
 				27AF4A601FBDBECC00E30184 /* Question.swift */,
 			);
 			path = Objects;
+			sourceTree = "<group>";
+		};
+		5ACB05C11FBDC3C100D978F1 /* QuestionsSelection */ = {
+			isa = PBXGroup;
+			children = (
+				5ACB05C41FBDC3F700D978F1 /* QuestionsSelectionViewCell.swift */,
+				5ACB05C21FBDC3F600D978F1 /* QuestionsSelectionViewCell.xib */,
+				5ACB05C31FBDC3F600D978F1 /* QuestionsSelectionViewController.swift */,
+				5ACB05C51FBDC3F700D978F1 /* QuestionsSelectionViewController.xib */,
+				27CE25031FC0534400CC7B7E /* CheckBox.swift */,
+			);
+			path = QuestionsSelection;
+			sourceTree = "<group>";
+		};
+		5ACB05CA1FBDC41100D978F1 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5ACB05CB1FBDC42700D978F1 /* GameData.swift */,
+			);
+			path = DataLayer;
 			sourceTree = "<group>";
 		};
 		B1C9C61ADEA8D45AB96FF490 /* Frameworks */ = {
@@ -147,7 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				D36C64861F8A1CC1008A548F /* DoYouKnowMe.app */,
-				D36C649A1F8A1CC1008A548F /* DoYouKnowMeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,6 +167,8 @@
 		D36C64881F8A1CC1008A548F /* DoYouKnowMe */ = {
 			isa = PBXGroup;
 			children = (
+				5ACB05CA1FBDC41100D978F1 /* DataLayer */,
+				5ACB05C11FBDC3C100D978F1 /* QuestionsSelection */,
 				27AF4A5D1FBDBDFF00E30184 /* Objects */,
 				275BBDD11FB4440200B91387 /* PlayGame */,
 				D3306A531FB1DDED0038759C /* Brians_Tests */,
@@ -199,24 +213,6 @@
 			productReference = D36C64861F8A1CC1008A548F /* DoYouKnowMe.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D36C64991F8A1CC1008A548F /* DoYouKnowMeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D36C64A61F8A1CC1008A548F /* Build configuration list for PBXNativeTarget "DoYouKnowMeTests" */;
-			buildPhases = (
-				D36C64961F8A1CC1008A548F /* Sources */,
-				D36C64971F8A1CC1008A548F /* Frameworks */,
-				D36C64981F8A1CC1008A548F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D36C649C1F8A1CC1008A548F /* PBXTargetDependency */,
-			);
-			name = DoYouKnowMeTests;
-			productName = DoYouKnowMeTests;
-			productReference = D36C649A1F8A1CC1008A548F /* DoYouKnowMeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -236,11 +232,6 @@
 							};
 						};
 					};
-					D36C64991F8A1CC1008A548F = {
-						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
-						TestTargetID = D36C64851F8A1CC1008A548F;
-					};
 				};
 			};
 			buildConfigurationList = D36C64811F8A1CC1008A548F /* Build configuration list for PBXProject "DoYouKnowMe" */;
@@ -257,7 +248,6 @@
 			projectRoot = "";
 			targets = (
 				D36C64851F8A1CC1008A548F /* DoYouKnowMe */,
-				D36C64991F8A1CC1008A548F /* DoYouKnowMeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -268,18 +258,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D36C64941F8A1CC1008A548F /* LaunchScreen.storyboard in Resources */,
+				5ACB05C61FBDC3F700D978F1 /* QuestionsSelectionViewCell.xib in Resources */,
 				D327DFA71FAE04B700AFB2AE /* CustomTableViewCell.xib in Resources */,
 				275BBDD51FB4444900B91387 /* PlayGameViewController.xib in Resources */,
 				D327DFA11FADFC0000AFB2AE /* TableViewController.xib in Resources */,
+				5ACB05C91FBDC3F700D978F1 /* QuestionsSelectionViewController.xib in Resources */,
 				D36C64911F8A1CC1008A548F /* Assets.xcassets in Resources */,
 				D39130921F8F5DAC00EF2DFD /* LoginView.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D36C64981F8A1CC1008A548F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +330,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2792FDAB1FBCF6F900B1278D /* DesignableUITextField.swift in Sources */,
+				5ACB05CC1FBDC42700D978F1 /* GameData.swift in Sources */,
+				5ACB05C81FBDC3F700D978F1 /* QuestionsSelectionViewCell.swift in Sources */,
+				27CE25041FC0534400CC7B7E /* CheckBox.swift in Sources */,
+				5ACB05C71FBDC3F700D978F1 /* QuestionsSelectionViewController.swift in Sources */,
 				27AF4A611FBDBECC00E30184 /* Question.swift in Sources */,
 				275BBDD31FB4442F00B91387 /* PlayGameViewController.swift in Sources */,
 				D36C648A1F8A1CC1008A548F /* AppDelegate.swift in Sources */,
@@ -354,23 +343,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D36C64961F8A1CC1008A548F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D36C649F1F8A1CC1008A548F /* DoYouKnowMeTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D36C649C1F8A1CC1008A548F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D36C64851F8A1CC1008A548F /* DoYouKnowMe */;
-			targetProxy = D36C649B1F8A1CC1008A548F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D36C64921F8A1CC1008A548F /* LaunchScreen.storyboard */ = {
@@ -527,38 +500,6 @@
 			};
 			name = Release;
 		};
-		D36C64A71F8A1CC1008A548F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DoYouKnowMeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.DoYouKnowMeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoYouKnowMe.app/DoYouKnowMe";
-			};
-			name = Debug;
-		};
-		D36C64A81F8A1CC1008A548F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DoYouKnowMeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.DoYouKnowMeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoYouKnowMe.app/DoYouKnowMe";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -576,15 +517,6 @@
 			buildConfigurations = (
 				D36C64A41F8A1CC1008A548F /* Debug */,
 				D36C64A51F8A1CC1008A548F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D36C64A61F8A1CC1008A548F /* Build configuration list for PBXNativeTarget "DoYouKnowMeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D36C64A71F8A1CC1008A548F /* Debug */,
-				D36C64A81F8A1CC1008A548F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

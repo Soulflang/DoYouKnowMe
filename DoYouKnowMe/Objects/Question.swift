@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Question {
+class FQuestion {
     
     
     
