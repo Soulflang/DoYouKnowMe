@@ -90,7 +90,6 @@ class PlayGameViewController: UIViewController {
     
     func checkQuestionAnswered(questionToCheck: Int)-> Bool{
         if((Game.sharedInstance.allQuestions[questionToCheck].p1Answer != "") && (Game.sharedInstance.allQuestions[questionToCheck].p2Answer != "")){
-            print("Question check A1: \(Game.sharedInstance.allQuestions[questionToCheck].p1Answer) A2: \(Game.sharedInstance.allQuestions[questionToCheck].p2Answer)")
             currentQuestion += 1
             return true
         }
@@ -102,14 +101,12 @@ class PlayGameViewController: UIViewController {
     func hasGameEnded() -> Bool {
         if currentQuestion+1 <= noOfQuestions {
             DispatchQueue.main.async{
-                print("Vi har nu fat i main tråden")
             self.updateView(currentQuestion: Game.sharedInstance.allQuestions[self.currentQuestion].text, currentPlayer: self.names[self.currentPlayerIndex])
             }
             return false
         }
         else {
-            //Her skal instantiering af næste view efter endt spil indsættes. 
-            print("Spillet er slut")
+            //Her skal instantiering af næste view efter endt spil indsættes.
             return true
         }
     }
@@ -119,14 +116,13 @@ class PlayGameViewController: UIViewController {
     
     func resolveNextTurn(){
         print("Resolve kaldt")
-            checkQuestionAnswered(questionToCheck: currentQuestion)
-            if(currentPlayerIndex == 1){
-                currentPlayerIndex = 0
-            }
-            else if(currentPlayerIndex == 0){
-                currentPlayerIndex = 1
-            }
-        hasGameEnded()
+        var check: Bool
+            check = checkQuestionAnswered(questionToCheck: currentQuestion)
+        print("Check Question status: \(check)")
+            //Nedenstående skifter mellem spillerne
+            currentPlayerIndex = 1 - currentPlayerIndex
+        check = hasGameEnded()
+        print("Check Game Ended status: \(check)")
         }
             
         
