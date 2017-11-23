@@ -16,7 +16,7 @@ class PlayGameViewController: UIViewController {
     private var currentQuestion = 0
     private var names: [String] = []
     private var currentPlayerIndex: Int = 99
-    let realm = try! Realm()
+    
     
     
     @IBOutlet var Gameview: UIView!
@@ -56,6 +56,7 @@ class PlayGameViewController: UIViewController {
         noOfQuestions = Game.sharedInstance.selectedQuestions.count
         print("No of questions selected \(noOfQuestions)")
         print(findStartingPlayer())
+        print("Date giver: \(Date())")
         updateView(currentQuestion: Game.sharedInstance.selectedQuestions[currentQuestion].text, currentPlayer: names[currentPlayerIndex])
         
        
@@ -75,12 +76,9 @@ class PlayGameViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    class Result: Object {
-        let resultDate = Date()
-        var questions = [Question]()
-        
-    }
+    
     func writeToRealm(result: Result){
+        let realm = try! Realm()
         try! realm.write {
             realm.add(result)
         }
@@ -126,9 +124,6 @@ class PlayGameViewController: UIViewController {
             return true
         }
     }
-    func updateView(){
-        
-    }
     
     func resolveNextTurn(){
         print("Resolve kaldt")
@@ -143,4 +138,9 @@ class PlayGameViewController: UIViewController {
             
         
     }
+class Result: Object {
+    @objc dynamic var resultDate = Date()
+    var questions = [Question]()
+    
+}
 

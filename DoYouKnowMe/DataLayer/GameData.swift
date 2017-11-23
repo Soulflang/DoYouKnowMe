@@ -7,14 +7,18 @@
 //
 
 import Foundation
+import RealmSwift
+import Realm
 
 
-
-class Question {
+class Question{
     
     init(_ question:String){
+
         text = question
     }
+    
+
     var text = ""
     var selected = false
     var p1Answer = ""
