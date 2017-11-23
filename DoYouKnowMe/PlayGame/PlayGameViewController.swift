@@ -140,7 +140,7 @@ class PlayGameViewController: UIViewController {
     }
 class Result: Object {
     @objc dynamic var resultDate = Date()
-    var questions = [Question]()
+    let questions = List<Question>()
     
 }
 

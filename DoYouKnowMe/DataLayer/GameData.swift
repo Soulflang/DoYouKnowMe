@@ -11,18 +11,15 @@ import RealmSwift
 import Realm
 
 
-class Question{
+class Question: Object{
     
-    init(_ question:String){
-
-        text = question
-    }
+    
     
 
-    var text = ""
-    var selected = false
-    var p1Answer = ""
-    var p2Answer = ""
+    @objc dynamic var text = ""
+    @objc dynamic var selected = false
+    @objc dynamic var p1Answer = ""
+    @objc dynamic var p2Answer = ""
     
 }
 
@@ -37,7 +34,7 @@ class Game {
     var allQuestions = [Question]()
     
     init(){
-        initQuestions()
+       // initQuestions()
     }
     
     
@@ -51,18 +48,18 @@ class Game {
         }
     }
     
-    func initQuestions(){
-        allQuestions.append(Question("Hvem skider mest lang?"))
-        allQuestions.append(Question("Hvem larmer mest? meget længere meget meget længere"))
-        allQuestions.append(Question("Hvem er klogest?"))
-        allQuestions.append(Question("Hvem laver den dårligste mad?"))
-        allQuestions.append(Question("Hvem er dårligst til at køre bil?"))
-        allQuestions.append(Question("Hvem havde lagt en lort på muldvarpens hoved?"))
-        allQuestions.append(Question("Hvem går altid under bordet først?"))
-        allQuestions.append(Question("Hvem kan synge det bedste cover af 'Born in the USA'?"))
-        
-        
-    }
+//    func initQuestions(){
+//        allQuestions.append(Question("Hvem skider mest lang?"))
+//        allQuestions.append(Question("Hvem larmer mest? meget længere meget meget længere"))
+//        allQuestions.append(Question("Hvem er klogest?"))
+//        allQuestions.append(Question("Hvem laver den dårligste mad?"))
+//        allQuestions.append(Question("Hvem er dårligst til at køre bil?"))
+//        allQuestions.append(Question("Hvem havde lagt en lort på muldvarpens hoved?"))
+//        allQuestions.append(Question("Hvem går altid under bordet først?"))
+//        allQuestions.append(Question("Hvem kan synge det bedste cover af 'Born in the USA'?"))
+//
+//
+//    }
 }
 
 
