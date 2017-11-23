@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import RealmSwift
 
 class Question {
     
@@ -38,7 +39,7 @@ class Game {
         let resultDate = Date()
         let questions = [Question]()
     }
-    func writeToRealm(Result: result){
+    func writeToRealm(result: Result){
         try! realm.write {
             realm.add(result)
         }
