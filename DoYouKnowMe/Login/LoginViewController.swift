@@ -16,6 +16,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var Field1: UITextField!
     @IBOutlet weak var Field2: UITextField!
+    @IBOutlet weak var Field3: UIView!
     
     
     
@@ -53,16 +54,9 @@ class LoginViewController: UIViewController {
             self.navigationController?.pushViewController(QuestionsSelectionViewController(), animated: true)
         }
         
-        
-        
-        
-        
-        
     }
     
-    
-    
-   
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -70,13 +64,9 @@ class LoginViewController: UIViewController {
     }
     
 
-    
-
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
-               
-      
-        
+ 
     }
     
     override func viewDidDisappear(_ animated: Bool) {
