@@ -7,12 +7,18 @@
 //
 
 import Foundation
+import RealmSwift
+import Realm
 
-class Question {
+
+class Question{
     
     init(_ question:String){
+
         text = question
     }
+    
+
     var text = ""
     var selected = false
     var p1Answer = ""
@@ -25,6 +31,7 @@ class Game {
     var player1Name = ""
     var player2Name = ""
     
+    
     var selectedQuestions = [Question]()
     
     var allQuestions = [Question]()
@@ -32,6 +39,7 @@ class Game {
     init(){
         initQuestions()
     }
+    
     
  
     func gamesSelected() {
@@ -56,5 +64,6 @@ class Game {
         
     }
 }
+
 
 

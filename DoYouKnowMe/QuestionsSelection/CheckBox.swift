@@ -26,8 +26,8 @@ class CheckBox: UIButton {
     
     func updateView(){
         // Images
-        self.checkedImage = unCheckedImg
-        self.uncheckedImage = CheckedImg
+        self.checkedImage = CheckedImg
+        self.uncheckedImage = unCheckedImg
     }
     
     

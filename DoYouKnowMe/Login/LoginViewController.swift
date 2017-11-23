@@ -51,7 +51,7 @@ class LoginViewController: UIViewController {
             let name2 = Field2.text!
             Game.sharedInstance.player1Name.append(name1)
             Game.sharedInstance.player2Name.append(name2)
-            //self.navigationController?.pushViewController(QuestionsSelectionViewController, animated: true)
+            self.navigationController?.pushViewController(QuestionsSelectionViewController(), animated: true)
         }
         
     }

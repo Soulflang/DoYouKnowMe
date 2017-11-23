@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class PlayGameViewController: UIViewController {
     
@@ -17,6 +18,7 @@ class PlayGameViewController: UIViewController {
     private var currentPlayerIndex: Int = 99
     
     
+    
     @IBOutlet var Gameview: UIView!
     @IBOutlet weak var Answer1: UIButton!
     @IBOutlet weak var Answer2: UIButton!
@@ -24,20 +26,20 @@ class PlayGameViewController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
     @IBAction func AnswerBtn1(_ sender: UIButton) {
         if(currentPlayerIndex==0){
-            Game.sharedInstance.allQuestions[currentQuestion].p1Answer = names[0]
+            Game.sharedInstance.selectedQuestions[currentQuestion].p1Answer = names[0]
         }
         else{
-            Game.sharedInstance.allQuestions[currentQuestion].p2Answer = names[0]
+            Game.sharedInstance.selectedQuestions[currentQuestion].p2Answer = names[0]
         }
         resolveNextTurn()
         
     }
     @IBAction func AnswerBtn2(_ sender: UIButton) {
         if(currentPlayerIndex==0){
-            Game.sharedInstance.allQuestions[currentQuestion].p1Answer = names[1]
+            Game.sharedInstance.selectedQuestions[currentQuestion].p1Answer = names[1]
         }
         else{
-            Game.sharedInstance.allQuestions[currentQuestion].p2Answer = names[1]
+            Game.sharedInstance.selectedQuestions[currentQuestion].p2Answer = names[1]
         }
         resolveNextTurn()
     }
@@ -51,10 +53,11 @@ class PlayGameViewController: UIViewController {
         names.append("Brian")
         Answer1.setTitle(names[0], for: .normal)
         Answer2.setTitle(names[1], for: .normal)
-        noOfQuestions = Game.sharedInstance.allQuestions.count
+        noOfQuestions = Game.sharedInstance.selectedQuestions.count
         print("No of questions selected \(noOfQuestions)")
         print(findStartingPlayer())
-        updateView(currentQuestion: Game.sharedInstance.allQuestions[currentQuestion].text, currentPlayer: names[currentPlayerIndex])
+        print("Date giver: \(Date())")
+        updateView(currentQuestion: Game.sharedInstance.selectedQuestions[currentQuestion].text, currentPlayer: names[currentPlayerIndex])
         
        
         
@@ -73,6 +76,14 @@ class PlayGameViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    func writeToRealm(result: Result){
+        let realm = try! Realm()
+        try! realm.write {
+            realm.add(result)
+        }
+    }
+    
     func findStartingPlayer() -> String{
         let diceRoll = Int(arc4random_uniform(2))
         print("Diceroll: \(diceRoll)")
@@ -89,7 +100,7 @@ class PlayGameViewController: UIViewController {
     
     
     func checkQuestionAnswered(questionToCheck: Int)-> Bool{
-        if((Game.sharedInstance.allQuestions[questionToCheck].p1Answer != "") && (Game.sharedInstance.allQuestions[questionToCheck].p2Answer != "")){
+        if((Game.sharedInstance.selectedQuestions[questionToCheck].p1Answer != "") && (Game.sharedInstance.selectedQuestions[questionToCheck].p2Answer != "")){
             currentQuestion += 1
             return true
         }
@@ -101,17 +112,17 @@ class PlayGameViewController: UIViewController {
     func hasGameEnded() -> Bool {
         if currentQuestion+1 <= noOfQuestions {
             DispatchQueue.main.async{
-            self.updateView(currentQuestion: Game.sharedInstance.allQuestions[self.currentQuestion].text, currentPlayer: self.names[self.currentPlayerIndex])
+            self.updateView(currentQuestion: Game.sharedInstance.selectedQuestions[self.currentQuestion].text, currentPlayer: self.names[self.currentPlayerIndex])
             }
             return false
         }
         else {
             //Her skal instantiering af næste view efter endt spil indsættes.
+            let result = Result()
+            result.questions = Game.sharedInstance.selectedQuestions
+            writeToRealm(result: result)
             return true
         }
-    }
-    func updateView(){
-        
     }
     
     func resolveNextTurn(){
@@ -127,4 +138,9 @@ class PlayGameViewController: UIViewController {
             
         
     }
+class Result: Object {
+    @objc dynamic var resultDate = Date()
+    var questions = [Question]()
+    
+}
 
