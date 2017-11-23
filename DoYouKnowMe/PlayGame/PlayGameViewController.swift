@@ -109,6 +109,13 @@ class PlayGameViewController: UIViewController {
         }
         
     }
+    func createResult(){
+        let result = Result()
+        for question in Game.sharedInstance.selectedQuestions {
+            result.questions.append(question)
+        }
+        writeToRealm(result: result)
+    }
     func hasGameEnded() -> Bool {
         if currentQuestion+1 <= noOfQuestions {
             DispatchQueue.main.async{
@@ -118,9 +125,8 @@ class PlayGameViewController: UIViewController {
         }
         else {
             //Her skal instantiering af næste view efter endt spil indsættes.
-            let result = Result()
-            result.questions = Game.sharedInstance.selectedQuestions
-            writeToRealm(result: result)
+            createResult()
+            self.navigationController?.pushViewController(ResultViewController(), animated: true)
             return true
         }
     }
@@ -140,7 +146,7 @@ class PlayGameViewController: UIViewController {
     }
 class Result: Object {
     @objc dynamic var resultDate = Date()
-    var questions = [Question]()
+    let questions = List<Question>()
     
 }
 
