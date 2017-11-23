@@ -24,6 +24,7 @@ class Game {
     static var sharedInstance = Game()
     var player1Name = ""
     var player2Name = ""
+    let realm = try! Realm()
     
     var selectedQuestions = [Question]()
     
@@ -33,6 +34,15 @@ class Game {
         initQuestions()
     }
     
+    class Result {
+        let resultDate = Date()
+        let questions = [Question]()
+    }
+    func writeToRealm(Result: result){
+        try! realm.write {
+            realm.add(result)
+        }
+    }
  
     func gamesSelected() {
         for question in allQuestions {

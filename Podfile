@@ -3,4 +3,5 @@ project 'DoYouKnowMe.xcodeproj'
 
 target 'DoYouKnowMe' do 
    pod 'IQKeyboardManagerSwift'
+   pod 'RealmSwift'
 end
