@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class PlayGameViewController: UIViewController {
     
@@ -15,6 +16,7 @@ class PlayGameViewController: UIViewController {
     private var currentQuestion = 0
     private var names: [String] = []
     private var currentPlayerIndex: Int = 99
+    let realm = try! Realm()
     
     
     @IBOutlet var Gameview: UIView!
@@ -73,6 +75,17 @@ class PlayGameViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    class Result: Object {
+        let resultDate = Date()
+        var questions = [Question]()
+        
+    }
+    func writeToRealm(result: Result){
+        try! realm.write {
+            realm.add(result)
+        }
+    }
+    
     func findStartingPlayer() -> String{
         let diceRoll = Int(arc4random_uniform(2))
         print("Diceroll: \(diceRoll)")
@@ -107,6 +120,9 @@ class PlayGameViewController: UIViewController {
         }
         else {
             //Her skal instantiering af næste view efter endt spil indsættes.
+            let result = Result()
+            result.questions = Game.sharedInstance.selectedQuestions
+            writeToRealm(result: result)
             return true
         }
     }
