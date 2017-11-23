@@ -49,15 +49,15 @@ class Game {
     }
     
 //    func initQuestions(){
-//        allQuestions.append(Question("Hvem skider mest lang?"))
-//        allQuestions.append(Question("Hvem larmer mest? meget længere meget meget længere"))
-//        allQuestions.append(Question("Hvem er klogest?"))
-//        allQuestions.append(Question("Hvem laver den dårligste mad?"))
+//        allQuestions.append(Question("Hvem drikker mest?"))
+//        allQuestions.append(Question("Hvem har haft sex med flest personer?"))
+//        allQuestions.append(Question("Hvem går mest i bad?"))
+//        allQuestions.append(Question("Hvem gør mest rent?"))
 //        allQuestions.append(Question("Hvem er dårligst til at køre bil?"))
-//        allQuestions.append(Question("Hvem havde lagt en lort på muldvarpens hoved?"))
-//        allQuestions.append(Question("Hvem går altid under bordet først?"))
+//        allQuestions.append(Question("Hvem har den sødeste tand?"))
+//        allQuestions.append(Question("Hvem går under bordet først?"))
 //        allQuestions.append(Question("Hvem kan synge det bedste cover af 'Born in the USA'?"))
-//
+//        allQuestions.append(Question("Hvem bruger flest penge?"))
 //
 //    }
 }
