@@ -21,6 +21,7 @@ class QuestionsSelectionViewController: UIViewController, UITableViewDataSource 
     }
 
     @IBAction func startGamePressed(_ sender: Any) {
+        Game.sharedInstance.gamesSelected()
         self.navigationController?.pushViewController(PlayGameViewController(), animated: true)
         
     }

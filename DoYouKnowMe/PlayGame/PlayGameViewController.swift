@@ -24,20 +24,20 @@ class PlayGameViewController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
     @IBAction func AnswerBtn1(_ sender: UIButton) {
         if(currentPlayerIndex==0){
-            Game.sharedInstance.allQuestions[currentQuestion].p1Answer = names[0]
+            Game.sharedInstance.selectedQuestions[currentQuestion].p1Answer = names[0]
         }
         else{
-            Game.sharedInstance.allQuestions[currentQuestion].p2Answer = names[0]
+            Game.sharedInstance.selectedQuestions[currentQuestion].p2Answer = names[0]
         }
         resolveNextTurn()
         
     }
     @IBAction func AnswerBtn2(_ sender: UIButton) {
         if(currentPlayerIndex==0){
-            Game.sharedInstance.allQuestions[currentQuestion].p1Answer = names[1]
+            Game.sharedInstance.selectedQuestions[currentQuestion].p1Answer = names[1]
         }
         else{
-            Game.sharedInstance.allQuestions[currentQuestion].p2Answer = names[1]
+            Game.sharedInstance.selectedQuestions[currentQuestion].p2Answer = names[1]
         }
         resolveNextTurn()
     }
@@ -51,10 +51,10 @@ class PlayGameViewController: UIViewController {
         names.append("Brian")
         Answer1.setTitle(names[0], for: .normal)
         Answer2.setTitle(names[1], for: .normal)
-        noOfQuestions = Game.sharedInstance.allQuestions.count
+        noOfQuestions = Game.sharedInstance.selectedQuestions.count
         print("No of questions selected \(noOfQuestions)")
         print(findStartingPlayer())
-        updateView(currentQuestion: Game.sharedInstance.allQuestions[currentQuestion].text, currentPlayer: names[currentPlayerIndex])
+        updateView(currentQuestion: Game.sharedInstance.selectedQuestions[currentQuestion].text, currentPlayer: names[currentPlayerIndex])
         
        
         
@@ -89,7 +89,7 @@ class PlayGameViewController: UIViewController {
     
     
     func checkQuestionAnswered(questionToCheck: Int)-> Bool{
-        if((Game.sharedInstance.allQuestions[questionToCheck].p1Answer != "") && (Game.sharedInstance.allQuestions[questionToCheck].p2Answer != "")){
+        if((Game.sharedInstance.selectedQuestions[questionToCheck].p1Answer != "") && (Game.sharedInstance.selectedQuestions[questionToCheck].p2Answer != "")){
             currentQuestion += 1
             return true
         }
@@ -101,7 +101,7 @@ class PlayGameViewController: UIViewController {
     func hasGameEnded() -> Bool {
         if currentQuestion+1 <= noOfQuestions {
             DispatchQueue.main.async{
-            self.updateView(currentQuestion: Game.sharedInstance.allQuestions[self.currentQuestion].text, currentPlayer: self.names[self.currentPlayerIndex])
+            self.updateView(currentQuestion: Game.sharedInstance.selectedQuestions[self.currentQuestion].text, currentPlayer: self.names[self.currentPlayerIndex])
             }
             return false
         }
