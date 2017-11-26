@@ -29,22 +29,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ez-v4-Pm3" customClass="CheckBox" customModule="DoYouKnowMe" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ez-v4-Pm3">
                                 <rect key="frame" x="285" y="3" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" selected="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="5ez-v4-Pm3" secondAttribute="height" multiplier="15:15" id="cc4-fC-REV" userLabel="aspect = 15:15"/>
                                     <constraint firstAttribute="height" constant="30" id="p9M-uA-ErW"/>
                                 </constraints>
                                 <color key="tintColor" red="0.87058823529999996" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal">
+                                <state key="normal" image="unchecked">
                                     <color key="titleColor" red="0.87058823529999996" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="unCheckedImg" value="unchecked"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="CheckedImg" value="checked"/>
-                                </userDefinedRuntimeAttributes>
+                                <state key="selected" image="checked"/>
                                 <connections>
-                                    <action selector="checkBoxPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="KZc-Ap-t09"/>
+                                    <action selector="checkboxPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="lpK-Ps-iuy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -65,7 +65,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="cbSelected" destination="5ez-v4-Pm3" id="TCj-fr-ouu"/>
+                <outlet property="checkbox" destination="5ez-v4-Pm3" id="2ih-El-FnY"/>
                 <outlet property="txtText" destination="REH-2y-9PP" id="v2f-Tg-hiO"/>
             </connections>
             <point key="canvasLocation" x="19" y="54"/>

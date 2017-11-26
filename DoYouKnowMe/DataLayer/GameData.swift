@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 class Question {
     
     init(_ question:String){
@@ -24,6 +24,9 @@ class Game {
     static var sharedInstance = Game()
     var player1Name = ""
     var player2Name = ""
+    
+    var player1Image: UIImage?
+    var player2Image: UIImage?
     
     var selectedQuestions = [Question]()
     

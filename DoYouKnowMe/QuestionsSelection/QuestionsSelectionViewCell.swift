@@ -12,13 +12,13 @@ class QuestionsSelectionViewCell: UITableViewCell {
 
 
     @IBOutlet weak var txtText: UILabel!
-    @IBOutlet weak var cbSelected: CheckBox!
+    @IBOutlet weak var checkbox: UIButton!
     
     var delegate: UIViewController?
     
     var index: Int?{
         willSet {
-           cbSelected.isChecked = Game.sharedInstance.allQuestions[newValue!].selected
+           checkbox.isSelected = Game.sharedInstance.allQuestions[newValue!].selected
         }
         
     }
@@ -30,10 +30,15 @@ class QuestionsSelectionViewCell: UITableViewCell {
     }
     
 
-    @IBAction func checkBoxPressed(_ sender: CheckBox) {
-        print("er checkbox checked: \(sender.isChecked)")
-        Game.sharedInstance.allQuestions[index!].selected =  sender.isChecked
+    @IBAction func checkboxPressed(_ sender: UIButton) {
+        
+        sender.isSelected = !sender.isSelected
+        Game.sharedInstance.allQuestions[index!].selected =  sender.isSelected
     }
+    //    @IBAction func checkBoxPressed(_ sender: CheckBox) {
+//        print("er checkbox checked: \(sender.isChecked)")
+//        Game.sharedInstance.allQuestions[index!].selected =  sender
+//    }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         //super.setSelected(selected, animated: animated)
