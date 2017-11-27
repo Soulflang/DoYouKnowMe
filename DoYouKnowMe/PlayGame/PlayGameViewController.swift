@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class PlayGameViewController: UIViewController {
     
@@ -17,12 +18,31 @@ class PlayGameViewController: UIViewController {
     private var currentPlayerIndex: Int = 99
     
     
+    @IBOutlet weak var answer1: UIView!
+    @IBOutlet weak var answer2: UIView!
+    @IBOutlet weak var answer1Name: UILabel!
+    @IBOutlet weak var answer2Name: UILabel!
+    @IBOutlet weak var answer1Image: UIImageView!
+    @IBOutlet weak var answer2Image: UIImageView!
+    
+    
     @IBOutlet var Gameview: UIView!
-    @IBOutlet weak var Answer1: UIButton!
-    @IBOutlet weak var Answer2: UIButton!
     @IBOutlet weak var turnLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
-    @IBAction func AnswerBtn1(_ sender: UIButton) {
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        let answer1Tap = UITapGestureRecognizer(target: self, action: #selector(self.answer1Tapped(sender:)))
+        answer1.addGestureRecognizer(answer1Tap)
+        
+        let answer2Tap = UITapGestureRecognizer(target: self, action: #selector(self.answer2Tapped(sender:)))
+        answer2.addGestureRecognizer(answer2Tap)
+        
+    }
+    
+    @objc func answer1Tapped(sender: UITapGestureRecognizer ){
         if(currentPlayerIndex==0){
             Game.sharedInstance.selectedQuestions[currentQuestion].p1Answer = names[0]
         }
@@ -30,9 +50,9 @@ class PlayGameViewController: UIViewController {
             Game.sharedInstance.selectedQuestions[currentQuestion].p2Answer = names[0]
         }
         resolveNextTurn()
-        
     }
-    @IBAction func AnswerBtn2(_ sender: UIButton) {
+    
+    @objc func answer2Tapped(sender: UITapGestureRecognizer ){
         if(currentPlayerIndex==0){
             Game.sharedInstance.selectedQuestions[currentQuestion].p1Answer = names[1]
         }
@@ -41,36 +61,49 @@ class PlayGameViewController: UIViewController {
         }
         resolveNextTurn()
     }
+
+    
     
     
     
     override func viewWillAppear(_ animated: Bool) {
-        //names.append(Game.sharedInstance.player1Name)
-        //names.append(Game.sharedInstance.player2Name)
-        names.append("Mathias")
-        names.append("Brian")
-        Answer1.setTitle(names[0], for: .normal)
-        Answer2.setTitle(names[1], for: .normal)
+        names.append(Game.sharedInstance.player1Name)
+        names.append(Game.sharedInstance.player2Name)
+    
+        answer1Name.text = names[0]
+        answer2Name.text = names[1]
+        
+        if let image = Game.sharedInstance.player1Image {
+            answer1Image.image = image
+        }
+        
+        if let image = Game.sharedInstance.player2Image {
+            answer2Image.image = image
+        }
+        
         noOfQuestions = Game.sharedInstance.selectedQuestions.count
         print("No of questions selected \(noOfQuestions)")
         print(findStartingPlayer())
+        print("Date giver: \(Date())")
         updateView(currentQuestion: Game.sharedInstance.selectedQuestions[currentQuestion].text, currentPlayer: names[currentPlayerIndex])
-        
-       
-        
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-    }
+    
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func writeToRealm(result: Result){
+        let realm = try! Realm()
+        try! realm.write {
+            realm.add(result)
+        }
     }
     
     func findStartingPlayer() -> String{
@@ -98,6 +131,14 @@ class PlayGameViewController: UIViewController {
         }
         
     }
+    func createResult(){
+        let result = Result()
+        for question in Game.sharedInstance.selectedQuestions {
+            result.questions.append(question)
+        }
+        writeToRealm(result: result)
+    }
+    
     func hasGameEnded() -> Bool {
         if currentQuestion+1 <= noOfQuestions {
             DispatchQueue.main.async{
@@ -107,11 +148,10 @@ class PlayGameViewController: UIViewController {
         }
         else {
             //Her skal instantiering af næste view efter endt spil indsættes.
+            createResult()
+            self.navigationController?.pushViewController(ResultViewController(), animated: true)
             return true
         }
-    }
-    func updateView(){
-        
     }
     
     func resolveNextTurn(){
@@ -127,4 +167,5 @@ class PlayGameViewController: UIViewController {
             
         
     }
+
 

@@ -16,6 +16,8 @@ class LoginViewController: UIViewController, UIImagePickerControllerDelegate, UI
     @IBOutlet weak var player1Image: UIImageView!
     @IBOutlet weak var player2Image: UIImageView!
     
+
+    
     
     @IBAction func loginButton(_ sender: UIButton) {
         print("startButtonPressed")
@@ -124,6 +126,7 @@ class LoginViewController: UIViewController, UIImagePickerControllerDelegate, UI
 
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
+ 
     }
     
     override func viewDidDisappear(_ animated: Bool) {
