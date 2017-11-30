@@ -64,6 +64,7 @@ class LoginViewController: UIViewController, UIImagePickerControllerDelegate, UI
             self.present(imagePicker, animated: true, completion: nil)
             
         }else {
+            
             print("Camera not available")
         }
     }
@@ -106,6 +107,14 @@ class LoginViewController: UIViewController, UIImagePickerControllerDelegate, UI
             self.present(imagePicker, animated: true, completion: nil)
             
         }else {
+            let alert = UIAlertController(title: "Camera problem",
+                                          message: "We could not establish connection to your camera",
+                                          preferredStyle: .alert)
+            
+            let saveAction = UIAlertAction(title: "Damn",
+                                           style: .default)
+            alert.addAction(saveAction)
+            present(alert, animated: true)
             print("Camera not available")
         }
     }

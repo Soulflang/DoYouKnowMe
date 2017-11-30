@@ -43,6 +43,8 @@ class ResultListViewController: UIViewController, UITableViewDataSource, UITable
         
         cell.p1Name.text = results[indexPath.row].player1
         cell.p2Name.text = results[indexPath.row].player2
+        cell.date.text = "\(results[indexPath.row].resultDate)"
+        cell.noOfQuestions.text = "\(results[indexPath.row].questions.count)"
         
         return cell
     }
