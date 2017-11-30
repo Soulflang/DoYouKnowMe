@@ -19,6 +19,9 @@ class LoginViewController: UIViewController, UIImagePickerControllerDelegate, UI
 
     
     
+    @IBAction func resultButtonPushed(_ sender: Any) {
+        navigationController?.pushViewController(ResultListViewController(), animated: true)
+    }
     @IBAction func loginButton(_ sender: UIButton) {
         print("startButtonPressed")
         if player1Text.text == "" || player2Text.text == "" {
@@ -128,9 +131,9 @@ class LoginViewController: UIViewController, UIImagePickerControllerDelegate, UI
  
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
-    }
+//    override func viewDidDisappear(_ animated: Bool) {
+//        self.navigationController?.setNavigationBarHidden(false, animated: true)
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

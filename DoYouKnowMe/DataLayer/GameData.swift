@@ -21,7 +21,12 @@ class Question: Object{
 }
 
 class Game {
+    
+    
     static var sharedInstance = Game()
+    
+    let realm: Realm
+    
     var player1Name = ""
     var player2Name = ""
     var player1Image: UIImage?
@@ -43,6 +48,7 @@ class Game {
     var activeResult: Result?
     
     init(){
+        realm = try! Realm()
         initQuestions()
     }
     

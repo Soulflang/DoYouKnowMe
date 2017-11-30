@@ -47,6 +47,14 @@ class QuestionsSelectionViewController: UIViewController, UITableViewDataSource 
         return cell
         
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
     /*
     // MARK: - Navigation
 

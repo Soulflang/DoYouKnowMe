@@ -15,7 +15,7 @@ class ResultViewController: UIViewController, UITableViewDataSource {
     private var answerP1: [String] = []
     private var answerP2: [String] = []
     var result: Result?
-    let realm = try! Realm()
+    
     
    
     @IBOutlet weak var tableView: UITableView!
@@ -51,7 +51,9 @@ class ResultViewController: UIViewController, UITableViewDataSource {
     }
     
     func getResults(){
+        let realm = try! Realm()
         let results = realm.objects(Result.self)
+        print(Int(results.count))
         result = results[results.endIndex-1]
     }
     
@@ -60,6 +62,9 @@ class ResultViewController: UIViewController, UITableViewDataSource {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func returnPushed(_ sender: Any) {
+        navigationController?.popToRootViewController(animated: true)
+    }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
