@@ -21,8 +21,20 @@ class QuestionsSelectionViewController: UIViewController, UITableViewDataSource 
     }
 
     @IBAction func startGamePressed(_ sender: Any) {
-        Game.sharedInstance.gamesSelected()
-        self.navigationController?.pushViewController(PlayGameViewController(), animated: true)
+        if Game.sharedInstance.gamesSelected() == true {
+             self.navigationController?.pushViewController(PlayGameViewController(), animated: true)
+        }
+        else {
+            let alert = UIAlertController(title: "Not enough questions selected",
+                                          message: "You have to choose at least 5 questions to play",
+                                          preferredStyle: .alert)
+            
+            let saveAction = UIAlertAction(title: "Okay",
+                                           style: .default)
+            alert.addAction(saveAction)
+            present(alert, animated: true)
+        }
+       
         
     }
     override func didReceiveMemoryWarning() {

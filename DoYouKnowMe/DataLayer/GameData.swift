@@ -51,18 +51,22 @@ class Game {
         realm = try! Realm()
         initQuestions()
     }
-    
-    
- 
-    func gamesSelected() {
+    func gamesSelected() -> Bool{
+        var tempQuestions = [Question]()
         for question in allQuestions {
-            if question.selected {
-                selectedQuestions.append(question)
-                print(question.text)
-            }
-        }
+        if question.selected {
+            tempQuestions.append(question)
+            print(question.text)
     }
-    
+}
+        if tempQuestions.count >= 5{
+            selectedQuestions = tempQuestions
+            return true
+        }
+        else {
+            return false
+        }
+}
     func initQuestions(){
         for text in questionTexts {
             let question = Question()

@@ -51,6 +51,8 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="BackgroundView" destination="H2p-sc-9uM" id="y67-fZ-Tgt"/>
+                <outlet property="answerBackground" destination="H2p-sc-9uM" id="xZb-B4-0i2"/>
                 <outlet property="answerPlayer1" destination="TfA-BG-P8J" id="pdl-Qt-y8H"/>
                 <outlet property="answerPlayer2" destination="jel-0j-abc" id="Ynv-bh-SiD"/>
                 <outlet property="questionTextView" destination="A0q-9Y-m58" id="cPx-BY-ADr"/>
