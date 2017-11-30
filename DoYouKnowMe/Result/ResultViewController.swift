@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ResultViewController: UIViewController, UITableViewDataSource {
     
     private var questions: [String] = []
-    private var answerP1: [Int] = []
-    private var answerP2: [Int] = []
+    private var answerP1: [String] = []
+    private var answerP2: [String] = []
+    var result: Result?
+    let realm = try! Realm()
     
    
     @IBOutlet weak var tableView: UITableView!
@@ -24,15 +27,22 @@ class ResultViewController: UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        getResults()
+        //player1Answered.text = Game.sharedInstance.player1Name + " har svaret"
+        //player2Answered.text = Game.sharedInstance.player2Name + " har svaret"
+        player1Answered.text = (result?.player1)! + " har svaret"
+        player2Answered.text = (result?.player2)! + " har svaret"
         
-        player1Answered.text = Game.sharedInstance.player1Name + " har svaret"
-        player2Answered.text = Game.sharedInstance.player2Name + " har svaret"
+        //let numberOfQuestions  = result?.questions.count
         
-        let numberOfQuestions  = Game.sharedInstance.selectedQuestions.count
-        
-        for i in 0..<numberOfQuestions{
-            questions.append("\(i + 1) \(Game.sharedInstance.selectedQuestions[i].text)")
+        for question in (result?.questions)!{
+            questions.append("\(question.text)")
+            answerP1.append(question.p1Answer)
+            answerP2.append(question.p2Answer)
+            
         }
+        
+        
         
         tableView.register(UINib(nibName: "ResultTableViewCell", bundle: nil), forCellReuseIdentifier: "resultCell")
         
@@ -40,7 +50,10 @@ class ResultViewController: UIViewController, UITableViewDataSource {
         
     }
     
-    
+    func getResults(){
+        let results = realm.objects(Result.self)
+        result = results[results.endIndex-1]
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -59,9 +72,12 @@ class ResultViewController: UIViewController, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "resultCell") as! ResultTableViewCell
         
         let text = questions[indexPath.row]
+        let answer1 = answerP1[indexPath.row]
+        let answer2 = answerP2[indexPath.row]
         
         cell.questionTextView.text = text
-        
+        cell.answerPlayer1.text = answer1
+        cell.answerPlayer2.text = answer2
         return cell
         
     }

@@ -136,6 +136,8 @@ class PlayGameViewController: UIViewController {
         for question in Game.sharedInstance.selectedQuestions {
             result.questions.append(question)
         }
+        result.player1 = Game.sharedInstance.player1Name
+        result.player2 = Game.sharedInstance.player2Name
         writeToRealm(result: result)
     }
     

@@ -5,6 +5,8 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,41 +24,59 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XIS-x6-YQ1">
+                <tableView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XIS-x6-YQ1">
                     <rect key="frame" x="0.0" y="86" width="375" height="581"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qe8-Ot-fpW">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qe8-Ot-fpW">
                     <rect key="frame" x="16" y="20" width="343" height="58"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player1 answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLh-gt-48W">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player1 answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLh-gt-48W">
                             <rect key="frame" x="8" y="37" width="114" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player2 answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flK-Bk-eOW">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player2 answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flK-Bk-eOW">
                             <rect key="frame" x="219" y="37" width="116" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Spillet er slut" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geN-m5-IuR">
-                            <rect key="frame" x="108" y="8" width="127" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spillet er slut" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geN-m5-IuR">
+                            <rect key="frame" x="94.5" y="8" width="154" height="25.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="geN-m5-IuR" secondAttribute="height" multiplier="127:21" id="QXz-19-Sfh"/>
+                            </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="21"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="geN-m5-IuR" firstAttribute="top" secondItem="Qe8-Ot-fpW" secondAttribute="top" constant="8" id="4Td-bg-53L"/>
+                        <constraint firstItem="flK-Bk-eOW" firstAttribute="top" secondItem="geN-m5-IuR" secondAttribute="bottom" constant="3.5" id="KWU-mA-lj3"/>
+                        <constraint firstItem="qLh-gt-48W" firstAttribute="leading" secondItem="Qe8-Ot-fpW" secondAttribute="leading" constant="8" id="VvM-kS-G5u"/>
+                        <constraint firstAttribute="bottom" secondItem="flK-Bk-eOW" secondAttribute="bottom" id="bnW-Sm-a2c"/>
+                        <constraint firstItem="qLh-gt-48W" firstAttribute="top" secondItem="geN-m5-IuR" secondAttribute="bottom" constant="3.5" id="hRv-1y-0BT"/>
+                        <constraint firstItem="geN-m5-IuR" firstAttribute="centerX" secondItem="Qe8-Ot-fpW" secondAttribute="centerX" id="joH-V9-Tqn"/>
+                        <constraint firstAttribute="trailing" secondItem="flK-Bk-eOW" secondAttribute="trailing" constant="8" id="lbX-zq-H30"/>
+                        <constraint firstAttribute="bottom" secondItem="qLh-gt-48W" secondAttribute="bottom" id="z7i-Du-h7i"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XIS-x6-YQ1" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="6gH-xU-3IR"/>
+                <constraint firstItem="XIS-x6-YQ1" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="KZw-dm-zEy"/>
+                <constraint firstItem="Qe8-Ot-fpW" firstAttribute="centerX" secondItem="XIS-x6-YQ1" secondAttribute="centerX" id="LMF-YH-GfC"/>
+                <constraint firstItem="Qe8-Ot-fpW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="MwL-t7-6mW"/>
+                <constraint firstItem="XIS-x6-YQ1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="S0K-UP-UCg"/>
+                <constraint firstAttribute="bottom" secondItem="Qe8-Ot-fpW" secondAttribute="bottom" constant="589" id="jtr-rb-2WP"/>
+                <constraint firstItem="XIS-x6-YQ1" firstAttribute="top" secondItem="Qe8-Ot-fpW" secondAttribute="bottom" constant="8" symbolic="YES" id="rvI-kI-nKN"/>
+                <constraint firstItem="Qe8-Ot-fpW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="xek-H4-7S6"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="34.5" y="53.5"/>
         </view>
