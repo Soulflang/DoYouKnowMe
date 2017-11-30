@@ -71,7 +71,6 @@ class LoginViewController: UIViewController, UIImagePickerControllerDelegate, UI
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             if takeImageOfP1 {
                 player1Image.image = pickedImage
-                
                 Game.sharedInstance.player1Image = pickedImage
             }else {
                 player2Image.image = pickedImage

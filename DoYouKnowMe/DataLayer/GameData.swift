@@ -69,6 +69,7 @@ class Game {
 class Result: Object {
     @objc dynamic var resultDate = Date()
     let questions = List<Question>()
+    
 }
 
 
