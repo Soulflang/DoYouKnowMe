@@ -71,13 +71,20 @@ class ResultViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "resultCell") as! ResultTableViewCell
         
-        let text = questions[indexPath.row]
+        let text = "\(indexPath.row+1). " + questions[indexPath.row]
         let answer1 = answerP1[indexPath.row]
         let answer2 = answerP2[indexPath.row]
         
         cell.questionTextView.text = text
         cell.answerPlayer1.text = answer1
         cell.answerPlayer2.text = answer2
+        if answer1 != answer2 {
+            cell.answerBackground.backgroundColor = UIColor(red: 255, green: 0, blue: 0, alpha: 0.28)
+            
+        }
+        else {
+            cell.answerBackground.backgroundColor = UIColor(red: 0, green: 255, blue: 0, alpha: 0.28)
+        }
         return cell
         
     }
