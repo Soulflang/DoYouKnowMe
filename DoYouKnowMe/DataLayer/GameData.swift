@@ -69,7 +69,8 @@ class Game {
 class Result: Object {
     @objc dynamic var resultDate = Date()
     let questions = List<Question>()
-    
+    @objc dynamic var player1 = String()
+    @objc dynamic var player2 = String()
 }
 
 
