@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,31 +18,22 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ApU-fT-On3">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="129.33333333333334"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vælg mindst 5 spørgsmål" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlD-NH-f4U">
-                            <rect key="frame" x="90" y="48" width="195" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="ApU-fT-On3" secondAttribute="height" multiplier="125:39" id="ANL-bK-OFM"/>
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b96-No-hir">
-                    <rect key="frame" x="0.0" y="129.33333333333337" width="414" height="535"/>
+                    <rect key="frame" x="0.0" y="100" width="320" height="412.5"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ug-WJ-MaA">
-                    <rect key="frame" x="0.0" y="680" width="414" height="56"/>
+                    <rect key="frame" x="0.0" y="528.5" width="320" height="39.5"/>
                     <color key="backgroundColor" red="0.87058823529999996" green="0.52549019610000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="7Ug-WJ-MaA" secondAttribute="height" multiplier="75:13" constant="90.923076923076906" id="obD-kf-P9W"/>
@@ -55,11 +46,22 @@
                         <action selector="startGamePressed:" destination="-1" eventType="touchUpInside" id="Cdl-G2-lEf"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vælg mindst 5 spørgsmål" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlD-NH-f4U">
+                    <rect key="frame" x="8" y="55" width="296" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="q21-rX-xpX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                    <color key="textColor" red="0.62959439770000003" green="0.62959439770000003" blue="0.62959439770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="7Ug-WJ-MaA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2jk-Ss-xrw"/>
+                <constraint firstItem="b96-No-hir" firstAttribute="top" secondItem="hlD-NH-f4U" secondAttribute="bottom" id="BhE-59-KG3"/>
                 <constraint firstItem="ApU-fT-On3" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Ccm-7h-QlO"/>
+                <constraint firstItem="hlD-NH-f4U" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="Ojw-s4-pFQ"/>
                 <constraint firstAttribute="trailing" secondItem="b96-No-hir" secondAttribute="trailing" id="P3F-Zf-pdO"/>
                 <constraint firstItem="7Ug-WJ-MaA" firstAttribute="top" secondItem="b96-No-hir" secondAttribute="bottom" constant="15.666666666666629" id="PDA-VU-qRo"/>
                 <constraint firstItem="7Ug-WJ-MaA" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="RbZ-tD-OTj"/>
@@ -67,10 +69,11 @@
                 <constraint firstItem="b96-No-hir" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Wql-Ov-s0i"/>
                 <constraint firstItem="ApU-fT-On3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dNJ-NB-MpS"/>
                 <constraint firstItem="ApU-fT-On3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gUy-ro-CIe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hlD-NH-f4U" secondAttribute="trailing" constant="16" id="jOw-MX-Zo9"/>
                 <constraint firstItem="b96-No-hir" firstAttribute="top" secondItem="ApU-fT-On3" secondAttribute="bottom" id="mGu-5J-Ux3"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="24.5" y="52.5"/>
+            <point key="canvasLocation" x="24" y="52"/>
         </view>
     </objects>
 </document>

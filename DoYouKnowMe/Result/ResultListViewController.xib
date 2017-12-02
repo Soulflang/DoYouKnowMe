@@ -5,7 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,33 +21,38 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="g2x-Bq-Nbi">
-                    <rect key="frame" x="0.0" y="118" width="375" height="549"/>
+                    <rect key="frame" x="0.0" y="76" width="375" height="591"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LRl-te-OXb">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="118"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="76"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alle resultater" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xvv-zG-UX6">
-                            <rect key="frame" x="166" y="49" width="42" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alle resultater" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xvv-zG-UX6">
+                            <rect key="frame" x="8" y="18" width="359" height="24"/>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                            <color key="textColor" red="0.62959439766839376" green="0.62959439766839376" blue="0.62959439766839376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="LRl-te-OXb" secondAttribute="height" multiplier="375:118" id="Gui-Dx-261"/>
+                        <constraint firstItem="Xvv-zG-UX6" firstAttribute="leading" secondItem="LRl-te-OXb" secondAttribute="leading" constant="8" id="90t-wI-SxN"/>
+                        <constraint firstItem="Xvv-zG-UX6" firstAttribute="top" secondItem="LRl-te-OXb" secondAttribute="top" constant="18" id="Ebp-kR-DfN"/>
+                        <constraint firstAttribute="height" constant="76" id="hd1-cG-myk"/>
+                        <constraint firstAttribute="trailing" secondItem="Xvv-zG-UX6" secondAttribute="trailing" constant="8" id="iO6-ag-gKI"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="LRl-te-OXb" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="CTE-hN-B9e"/>
                 <constraint firstItem="LRl-te-OXb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Cow-TA-Skh"/>
                 <constraint firstItem="g2x-Bq-Nbi" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="JdA-5i-ZGx"/>
                 <constraint firstItem="g2x-Bq-Nbi" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="PTi-Pw-4Yc"/>
+                <constraint firstItem="LRl-te-OXb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="U7J-Vv-0KD"/>
                 <constraint firstItem="LRl-te-OXb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="U8Y-ES-u6u"/>
                 <constraint firstItem="g2x-Bq-Nbi" firstAttribute="top" secondItem="LRl-te-OXb" secondAttribute="bottom" id="YqN-Zc-Alq"/>
                 <constraint firstItem="g2x-Bq-Nbi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="c0d-OS-wQH"/>
+                <constraint firstItem="LRl-te-OXb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gWV-n3-a8N"/>
                 <constraint firstItem="LRl-te-OXb" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="nnS-6Y-Uir"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

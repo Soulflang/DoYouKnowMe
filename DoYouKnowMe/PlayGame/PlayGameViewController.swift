@@ -139,6 +139,7 @@ class PlayGameViewController: UIViewController {
         result.player1 = Game.sharedInstance.player1Name
         result.player2 = Game.sharedInstance.player2Name
         writeToRealm(result: result)
+        Game.sharedInstance.activeResult = result
     }
     
     func hasGameEnded() -> Bool {

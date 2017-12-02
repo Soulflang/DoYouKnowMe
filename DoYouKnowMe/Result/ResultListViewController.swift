@@ -25,6 +25,7 @@ class ResultListViewController: UIViewController, UITableViewDataSource, UITable
         // Do any additional setup after loading the view.
         resultsTable.register(UINib(nibName: "ResultListTableViewCell", bundle: nil), forCellReuseIdentifier: "ResultListCell")
         resultsTable.dataSource = self
+        resultsTable.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,6 +44,8 @@ class ResultListViewController: UIViewController, UITableViewDataSource, UITable
         
         cell.p1Name.text = results[indexPath.row].player1
         cell.p2Name.text = results[indexPath.row].player2
+        cell.noOfQuestions.text = String(results[indexPath.row].questions.count)
+        cell.date.text = (results[indexPath.row].resultDate.description).prefix(16).description
         
         return cell
     }
@@ -50,15 +53,11 @@ class ResultListViewController: UIViewController, UITableViewDataSource, UITable
     override func viewDidAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        Game.sharedInstance.activeResult = results[indexPath.row]
+        
+        navigationController?.pushViewController(ResultViewController(), animated: true)
     }
-    */
 
 }
