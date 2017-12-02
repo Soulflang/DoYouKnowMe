@@ -21,6 +21,7 @@
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="et eller andet" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="A0q-9Y-m58">
                         <rect key="frame" x="8" y="1" width="304" height="56.5"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="textColor" red="0.27691871759999998" green="0.27691871759999998" blue="0.27691871759999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
@@ -30,7 +31,7 @@
                             <constraint firstAttribute="width" constant="150" id="IDG-sJ-fT3"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" red="0.27691871759999998" green="0.27691871759999998" blue="0.27691871759999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="svar1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfA-BG-P8J">
@@ -39,7 +40,7 @@
                             <constraint firstAttribute="width" constant="150" id="guy-FI-aeY"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" red="0.27691871759999998" green="0.27691871759999998" blue="0.27691871759999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
