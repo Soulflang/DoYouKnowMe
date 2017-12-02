@@ -134,7 +134,11 @@ class PlayGameViewController: UIViewController {
     func createResult(){
         let result = Result()
         for question in Game.sharedInstance.selectedQuestions {
-            result.questions.append(question)
+            let q = Question()
+            q.text = question.text
+            q.p1Answer = question.p1Answer
+            q.p2Answer = question.p2Answer
+            result.questions.append(q)
         }
         result.player1 = Game.sharedInstance.player1Name
         result.player2 = Game.sharedInstance.player2Name

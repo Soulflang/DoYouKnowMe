@@ -73,13 +73,13 @@
                     <rect key="frame" x="16" y="281" width="288" height="84"/>
                     <subviews>
                         <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selfie_icon" translatesAutoresizingMaskIntoConstraints="NO" id="agd-mq-Ho5">
-                            <rect key="frame" x="0.0" y="4" width="75" height="76"/>
+                            <rect key="frame" x="0.0" y="4" width="75.5" height="76"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="agd-mq-Ho5" secondAttribute="height" multiplier="83:84" id="TdW-oh-YOU"/>
                             </constraints>
                         </imageView>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Spiller 1 navn" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eQZ-oh-P9L">
-                            <rect key="frame" x="83" y="27" width="205" height="30"/>
+                            <rect key="frame" x="83.5" y="27" width="204.5" height="30"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>

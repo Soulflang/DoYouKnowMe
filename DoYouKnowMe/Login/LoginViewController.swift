@@ -70,7 +70,9 @@ class LoginViewController: UIViewController, UIImagePickerControllerDelegate, UI
     }
     
     
-    
+    func resetGamedata() {
+        Game.sharedInstance.reset()
+    }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             if takeImageOfP1 {
@@ -137,7 +139,7 @@ class LoginViewController: UIViewController, UIImagePickerControllerDelegate, UI
 
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
- 
+        self.resetGamedata()
     }
     
 //    override func viewDidDisappear(_ animated: Bool) {

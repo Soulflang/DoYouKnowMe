@@ -91,6 +91,12 @@ class Game {
         realm = try! Realm()
         initQuestions()
     }
+    
+    func reset() {
+        self.player1Name = ""
+        self.player2Name = ""
+        self.selectedQuestions.removeAll()
+    }
     func gamesSelected() -> Bool{
         var tempQuestions = [Question]()
         for question in allQuestions {
