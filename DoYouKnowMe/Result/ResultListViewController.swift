@@ -15,7 +15,8 @@ class ResultListViewController: UIViewController, UITableViewDataSource, UITable
     var results: Results<Result> {
         get {
             let realm = try! Realm()
-            return realm.objects(Result.self)
+            
+            return realm.objects(Result.self).sorted(byKeyPath: "resultDate", ascending: false)
         }
     }
     

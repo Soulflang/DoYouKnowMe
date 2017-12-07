@@ -18,10 +18,25 @@ class LoginViewController: UIViewController, UIImagePickerControllerDelegate, UI
     
 
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        
+        
+        // Adding tap actions to images
+        let p1ImageTap = UITapGestureRecognizer()
+        p1ImageTap.addTarget(self, action: #selector(self.p1ImagePressed))
+        player1Image.addGestureRecognizer(p1ImageTap)
+        
+        let p2ImageTap = UITapGestureRecognizer()
+        p2ImageTap.addTarget(self, action: #selector(self.p2ImagePressed))
+        player2Image.addGestureRecognizer(p2ImageTap)
+    }
     
     @IBAction func resultButtonPushed(_ sender: Any) {
         navigationController?.pushViewController(ResultListViewController(), animated: true)
     }
+    
     @IBAction func loginButton(_ sender: UIButton) {
         print("startButtonPressed")
         if player1Text.text == "" || player2Text.text == "" {
@@ -54,25 +69,10 @@ class LoginViewController: UIViewController, UIImagePickerControllerDelegate, UI
         }
     }
     
-    @IBAction func phototest(_ sender: Any) {
-        
-        if UIImagePickerController.isSourceTypeAvailable(.camera) {
-            let imagePicker = UIImagePickerController()
-            imagePicker.delegate = self
-            imagePicker.sourceType = .camera;
-            imagePicker.allowsEditing = false
-            self.present(imagePicker, animated: true, completion: nil)
-            
-        }else {
-            
-            print("Camera not available")
-        }
-    }
-    
-    
     func resetGamedata() {
         Game.sharedInstance.reset()
     }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             if takeImageOfP1 {
@@ -99,8 +99,6 @@ class LoginViewController: UIViewController, UIImagePickerControllerDelegate, UI
         takePicture()
     }
     
-    
-    
     func takePicture() {
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             let imagePicker = UIImagePickerController()
@@ -120,22 +118,6 @@ class LoginViewController: UIViewController, UIImagePickerControllerDelegate, UI
             print("Camera not available")
         }
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        
-        // Adding tap actions to images
-        let p1ImageTap = UITapGestureRecognizer()
-        p1ImageTap.addTarget(self, action: #selector(self.p1ImagePressed))
-        player1Image.addGestureRecognizer(p1ImageTap)
-        
-        let p2ImageTap = UITapGestureRecognizer()
-        p2ImageTap.addTarget(self, action: #selector(self.p2ImagePressed))
-        player2Image.addGestureRecognizer(p2ImageTap)
-    }
-    
-
 
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: true)

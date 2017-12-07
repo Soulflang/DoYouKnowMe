@@ -24,8 +24,7 @@ class Game {
     
     
     static var sharedInstance = Game()
-    
-    let realm: Realm
+
     
     var player1Name = ""
     var player2Name = ""
@@ -88,7 +87,6 @@ class Game {
     var activeResult: Result?
     
     init(){
-        realm = try! Realm()
         initQuestions()
     }
     
@@ -100,11 +98,11 @@ class Game {
     func gamesSelected() -> Bool{
         var tempQuestions = [Question]()
         for question in allQuestions {
-        if question.selected {
-            tempQuestions.append(question)
-            print(question.text)
-    }
-}
+            if question.selected {
+                tempQuestions.append(question)
+                print(question.text)
+            }
+        }
         if tempQuestions.count >= 5{
             selectedQuestions = tempQuestions
             return true
@@ -112,7 +110,8 @@ class Game {
         else {
             return false
         }
-}
+    }
+    
     func initQuestions(){
         for text in questionTexts {
             let question = Question()
