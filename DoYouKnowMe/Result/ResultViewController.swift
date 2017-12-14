@@ -28,8 +28,7 @@ class ResultViewController: UIViewController, UITableViewDataSource {
 
     
     override func viewDidLoad() {
-        super.viewDidLoad()        //player1Answered.text = Game.sharedInstance.player1Name + " har svaret"
-        //player2Answered.text = Game.sharedInstance.player2Name + " har svaret"
+        super.viewDidLoad()
         print(result)
         player1Answered.text = "Svar: " + result.player1
         player2Answered.text = "Svar: " + result.player2
@@ -62,6 +61,11 @@ class ResultViewController: UIViewController, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return questions.count
+    }
+    
+    
+    func whatIsLunch(on: String){
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

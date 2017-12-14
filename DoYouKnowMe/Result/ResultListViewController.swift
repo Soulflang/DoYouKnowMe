@@ -22,6 +22,7 @@ class ResultListViewController: UIViewController, UITableViewDataSource, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
         resultsTable.register(UINib(nibName: "ResultListTableViewCell", bundle: nil), forCellReuseIdentifier: "ResultListCell")

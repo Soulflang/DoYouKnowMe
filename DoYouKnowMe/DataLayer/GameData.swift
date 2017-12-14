@@ -94,6 +94,8 @@ class Game {
         self.player1Name = ""
         self.player2Name = ""
         self.selectedQuestions.removeAll()
+        self.allQuestions.removeAll()
+        self.initQuestions()
     }
     func gamesSelected() -> Bool{
         var tempQuestions = [Question]()
